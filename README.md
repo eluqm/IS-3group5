@@ -17,20 +17,25 @@ Los mockups se desarrollaron en la pagina Figma en total tenemos 7 donde mostram
 
 Primero tenemos nuestros dos mockups para poder iniciar sesión tambien para crear una cuenta .Los dos piden datos basicos como nombre, correo , contraseña entre otros datos
 
+
 Luego tenemos la pagina principal la cual mostrara el mapa para ver nuestra ubicacion actual y tambien un pequeño resumen de las estadisticas al momento de caminar
+
 ![image](https://user-images.githubusercontent.com/49428509/177020835-8f87f8f6-4775-4c11-814d-36483d504a67.png)
 
 
 Tambien tenemos un mockup para la parte de las estadisticas de nuestras actividades, en esta se mostrara un pequeñoo grafico y un resumen de lo que realizo en los ultimos 7 dias
+
 ![image](https://user-images.githubusercontent.com/49428509/177020858-693abef6-74df-47fc-9d70-d709faae29a3.png)
 
 
 Luego tenemos dos mockups especialmente diseñados para la tienda interna de la app donde se ofreceran varioa avaatares y walpapers para usar en la app lo cuales se van a canjear con puntos que se iran dando por cumplir objetivos
+
 ![image](https://user-images.githubusercontent.com/49428509/177020883-6e96f7aa-3072-47bd-aba4-f9941f1d1c5b.png)
 ![image](https://user-images.githubusercontent.com/49428509/177020889-70bc1935-4a3c-4eab-93de-bf04809f64d3.png)
 
 
 Para finalizar tenemos un mockup para el perfil de cada usuario donde podra ver sus datos y tambien tendra la opcion de cerrar su sesión
+
 ![image](https://user-images.githubusercontent.com/49428509/177020949-063fdb88-840d-4328-8666-ea0d810753c6.png)
 
 
