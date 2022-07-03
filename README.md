@@ -10,3 +10,11 @@ https://docs.google.com/document/d/1s1gV0AmxZG5u029aQwCnikhdyj4lpGjF/edit?usp=sh
 ## Requisitos No Funcionales
 
 
+## Mockups
+Los mockups se desarrollaron en la pagina Figma en total tenemos 7 donde mostramos las principales interfaces de nuestra aplicacion android
+![image](https://user-images.githubusercontent.com/49428509/177020746-eb731c43-766d-453f-8ba4-1f123807ed4a.png)
+![image](https://user-images.githubusercontent.com/49428509/177020759-8c7bd0c3-548e-430b-8939-d836f9d16a00.png)
+
+Primero tenemos nuestros dos mockups para poder iniciar cesion y tambien para crear una cuenta .Los dos piden datos basicos como nombre, correo , contraseña entre otros datos
+
+
