@@ -44,10 +44,10 @@ Los modelos se desarrollaron en la pagina Moqups.
 <br/>
 El diseño de los modelos de bases de datos se puede ver en este [Enlace](https://app.moqups.com/Q1vdJRphWudQZaOnlHNssINQ0HhTATt2/view/page/abbaf8365)
 ### Modelo Entidad Relacional
-![Modelo Entidad Relacional](https://user-images.githubusercontent.com/49489730/177255649-5dbc9141-043f-4306-93d6-f55dda8c002f.PNG)
+![Modelo Entidad Relacional](https://user-images.githubusercontent.com/49489730/177257605-62166fb8-b1d2-45dd-ae6c-f89dd8aae8ae.PNG)
 
 ### Modelo Relacional 
-![Modelo Relacional](https://user-images.githubusercontent.com/49489730/177255661-6a58a20a-641b-41b5-814a-e937894d21ba.PNG)
+![Modelo Relacional](https://user-images.githubusercontent.com/49489730/177257613-d84f1bec-a59a-4505-b989-7481a9b5421c.PNG)
 
 
 
