@@ -32,18 +32,19 @@
   * [Tecnologías Usadas](#space_invader-tecnologías-usadas)
   * [Mockups](#camera-mockups)
   * [Equipo](#wave-equipo)
-  * [Gestión del proyecto](#compass-roadmap)
-  * [Instalación](#gear-installation)
-- [Descripción General](#dart-features)
-  * [Caso de Uso](#dart-features)
-  * [Requisito Funcional](#dart-features)
-  * [Diagrama Entidad Relación](#dart-features)
-  * [Modelo Relacional](#dart-features)
-  * [Diagrama de Clases](#dart-features)
-  * [Arquitectura](#dart-features)
-  * [Base de Datos](#dart-features)
-- [Licencia](#warning-license)
-- [Contacto](#handshake-contact)
+  * [Gestión del proyecto](#compass-gestión-del-proyecto)
+  * [Instalación](#gear-instalación)
+- [Descripción General](#dart-descripción-general)
+  * [Caso de Uso](#dart-caso-de-uso)
+  * [Requisito Funcional](#dart-requisito-funcional)
+  * [Requisitos No Funcionales](#dart-requisitos-no-funcionales)
+  * [Diagrama Entidad Relación](#dart-diagrama-entidad-relación)
+  * [Modelo Relacional](#dart-modelo-relacional)
+  * [Diagrama de Clases](#dart-diagrama-de-clases)
+  * [Arquitectura](#dart-arquitectura)
+  * [Base de Datos](#dart-base-de-datos)
+- [Licencia](#warning-licencia)
+- [Contacto](#handshake-contacto)
 
 
 ## :star2: Acerca del Proyecto
@@ -103,7 +104,16 @@ La aplicación EcoWalkers será un producto diseñado para trabajar en entorno m
 [![Whats-App-Image-2022-07-05-at-4-09-48-PM.jpg](https://i.postimg.cc/c4dhyBMT/Whats-App-Image-2022-07-05-at-4-09-48-PM.jpg)](https://postimg.cc/xqFMLHZb)
 
 ### :dart: Requisito Funcional
+
 ![image](https://user-images.githubusercontent.com/64268942/177435924-3de458d9-9d0f-4347-be59-166abcbcac8f.png)
+
+### :dart: Requisitos No Funcionales
+
+- Fiabilidad
+- Usabilidad
+- Eficiencia
+- Mantenibilidad
+- Seguridad
 
 ### :dart: Diagrama Entidad Relación
 
