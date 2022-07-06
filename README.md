@@ -28,10 +28,10 @@
 
 # :notebook_with_decorative_cover: Tabla de Contenido
 
-- [Acerca del Proyecto](#star2-about-the-project)
-  * [Tecnologías Usadas](#space_invader-tech-stack)
-  * [Mockups](#camera-screenshots)
-  * [Equipo](#wave-contributing)
+- [Acerca del Proyecto](#star2-acerca-del-proyecto)
+  * [Tecnologías Usadas](#space_invader-tecnologías-usadas)
+  * [Mockups](#camera-mockups)
+  * [Equipo](#wave-equipo)
   * [Gestión del proyecto](#compass-roadmap)
   * [Instalación](#gear-installation)
 - [Descripción General](#dart-features)
@@ -109,7 +109,7 @@ La aplicación EcoWalkers será un producto diseñado para trabajar en entorno m
 
 ![Modelo Entidad Relacional](https://user-images.githubusercontent.com/49489730/177257605-62166fb8-b1d2-45dd-ae6c-f89dd8aae8ae.PNG)
 
-### Modelo Relacional 
+### :dart: Modelo Relacional 
 
 ![Modelo Relacional](https://user-images.githubusercontent.com/49489730/177257613-d84f1bec-a59a-4505-b989-7481a9b5421c.PNG)
 
