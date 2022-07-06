@@ -79,7 +79,7 @@ Luego tenemos dos mockups especialmente diseñados para la tienda interna de la 
 * [Edwar](https://github.com/evargashe)
 * [Fabian](https://www.sqlite.org/)
 
-### 🧭 Gestión del Proyecto
+### :compass: Gestión del Proyecto
 
 Esta metodologia ágil nos ayudará a gestionar la realización de las tareas necesarias para el desarrollo de la aplicación hasta que estas sean culminadas. 
 Ya que esta metodología hace referencia a tarjetas visuales es que utilizaremos la herramienta Trello; ya que esta herramienta nos permite organizar las tarjetas en listas que nos permitirán llevar de una mejor manera  el flujo de las tareas. 
