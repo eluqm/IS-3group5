@@ -36,6 +36,7 @@
   * [Instalación](#gear-installation)
 - [Descripción General](#dart-features)
   * [Caso de Uso](#dart-features)
+  * [Requisito Funcional](#dart-features)
   * [Diagrama Entidad Relación](#dart-features)
   * [Modelo Relacional](#dart-features)
   * [Diagrama de Clases](#dart-features)
@@ -58,12 +59,11 @@ EcoWalkers es una aplicacion que consiste en brindar información acerca de la c
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### :camera: Mockups
-Los mockups se desarrollaron en la pagina Figma en total tenemos 7 donde mostramos las principales interfaces de nuestra aplicacion android
+
+Los mockups se desarrollaron en la pagina Figma en total tenemos 7 donde mostramos las principales interfaces de nuestra aplicacion android. Primero tenemos nuestros dos mockups para poder iniciar sesión tambien para crear una cuenta .Los dos piden datos basicos como nombre, correo , contraseña entre otros datos
 
 ![image](https://user-images.githubusercontent.com/49428509/177020746-eb731c43-766d-453f-8ba4-1f123807ed4a.png)
 ![image](https://user-images.githubusercontent.com/49428509/177020759-8c7bd0c3-548e-430b-8939-d836f9d16a00.png)
-
-Primero tenemos nuestros dos mockups para poder iniciar sesión tambien para crear una cuenta .Los dos piden datos basicos como nombre, correo , contraseña entre otros datos
 
 
 Luego tenemos la pagina principal la cual mostrara el mapa para ver nuestra ubicacion actual y tambien un pequeño resumen de las estadisticas al momento de caminar
@@ -101,8 +101,6 @@ Esta metodologia ágil nos ayudará a gestionar la realización de las tareas ne
 Ya que esta metodología hace referencia a tarjetas visuales es que utilizaremos la herramienta Trello; ya que esta herramienta nos permite organizar las tarjetas en listas que nos permitirán llevar de una mejor manera  el flujo de las tareas. 
 Creamos 4 listas: To do, In progress, Done y To maintenance
 ![image](https://user-images.githubusercontent.com/64268942/177435854-cbba0220-d0c3-4e8b-a27f-23b2a0ebe75e.png)
-## Requisitos Funcionales
-![image](https://user-images.githubusercontent.com/64268942/177435924-3de458d9-9d0f-4347-be59-166abcbcac8f.png)
 
 ### :gear: Instalación
 
@@ -120,6 +118,9 @@ La aplicación EcoWalkers será un producto diseñado para trabajar en entorno m
 ### :dart: Caso de Uso
 
 [![Whats-App-Image-2022-07-05-at-4-09-48-PM.jpg](https://i.postimg.cc/c4dhyBMT/Whats-App-Image-2022-07-05-at-4-09-48-PM.jpg)](https://postimg.cc/xqFMLHZb)
+
+### :dart: Requisitos Funcionales
+![image](https://user-images.githubusercontent.com/64268942/177435924-3de458d9-9d0f-4347-be59-166abcbcac8f.png)
 
 ### :dart: Diagrama Entidad Relación
 
