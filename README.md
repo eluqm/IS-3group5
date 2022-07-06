@@ -5,6 +5,12 @@ EcoWalkers es una aplicacion que consiste en brindar información acerca de la c
 La informacion esta detallada en el documento:
 https://docs.google.com/document/d/1s1gV0AmxZG5u029aQwCnikhdyj4lpGjF/edit?usp=sharing&ouid=114740062015742038860&rtpof=true&sd=true
 
+### Metodología Kaban 
+Esta metodologia ágil nos ayudará a gestionar la realización de las tareas necesarias para el desarrollo de la aplicación hasta que estas sean culminadas. 
+Ya que esta metodología hace referencia a tarjetas visuales es que utilizaremos la herramienta Trello; ya que esta herramienta nos permite organizar las tarjetas en listas que nos permitirán llevar de una mejor manera  el flujo de las tareas. 
+Creamos 4 listas: To do, In progress, Done y To maintenance
+![image](https://user-images.githubusercontent.com/64268942/177435766-ab0a3f69-766c-4cf2-814c-3fc272f5bbe5.png)
+
 ## Requisitos Funcionales
 
 ## Requisitos No Funcionales
