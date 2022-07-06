@@ -11,7 +11,7 @@
   <p align="center">
     Aplicación móvil enfocado a la reducción del CO2
     <br />
-    <a href="https://github.com/eluqm/IS-3group5"><strong>Documentación »</strong></a>
+    <a href="https://docs.google.com/document/d/1s1gV0AmxZG5u029aQwCnikhdyj4lpGjF/edit"><strong>Documentación »</strong></a>
     <br />
     <br />
     <a href="https://github.com/eluqm/IS-3group5">View Demo</a>
@@ -30,7 +30,7 @@
 
 - [Acerca del Proyecto](#star2-about-the-project)
   * [Tecnologías Usadas](#space_invader-tech-stack)
-  * [Mockup](#camera-screenshots)
+  * [Mockups](#camera-screenshots)
   * [Equipo](#wave-contributing)
   * [Gestión del proyecto](#compass-roadmap)
   * [Instalación](#gear-installation)
@@ -44,7 +44,6 @@
   * [Base de Datos](#dart-features)
 - [Licencia](#warning-license)
 - [Contacto](#handshake-contact)
-- [Acknowledgements](#gem-acknowledgements)
 
 
 ## :star2: Acerca del Proyecto
@@ -60,13 +59,13 @@ EcoWalkers es una aplicacion que consiste en brindar información acerca de la c
 
 ### :camera: Mockups
 
-Los mockups se desarrollaron en la pagina Figma en total tenemos 7 donde mostramos las principales interfaces de nuestra aplicacion android. Primero tenemos nuestros dos mockups para poder iniciar sesión tambien para crear una cuenta .Los dos piden datos basicos como nombre, correo , contraseña entre otros datos. Luego tenemos la pagina principal la cual mostrara el mapa para ver nuestra ubicacion actual y tambien un pequeño resumen de las estadisticas al momento de caminar.
+Los mockups se desarrollaron en la pagina Figma en total tenemos 7 donde mostramos las principales interfaces de nuestra aplicacion android. Primero tenemos nuestros dos mockups para poder iniciar sesión tambien para crear una cuenta. Los dos piden datos basicos como nombre, correo , contraseña entre otros datos. Luego tenemos la pagina principal la cual mostrara el mapa para ver nuestra ubicacion actual y tambien un pequeño resumen de las estadisticas al momento de caminar.
 
-Tambien tenemos un mockup para la parte de las estadisticas de nuestras actividades, en esta se mostrara un pequeñoo grafico y un resumen de lo que realizo en los ultimos 7 dias
+Tambien tenemos un mockup para la parte de las estadisticas de nuestras actividades, en esta se mostrara un pequeñoo grafico y un resumen de lo que realizo en los ultimos 7 dias.
 
 [![mockup.png](https://i.postimg.cc/MTKKVGCy/mockup.png)](https://postimg.cc/jWmbrRd5)
 
-Luego tenemos dos mockups especialmente diseñados para la tienda interna de la app donde se ofreceran varioa avaatares y walpapers para usar en la app lo cuales se van a canjear con puntos que se iran dando por cumplir objetivos
+Luego tenemos dos mockups especialmente diseñados para la tienda interna de la app donde se ofreceran varioa avaatares y walpapers para usar en la app lo cuales se van a canjear con puntos que se iran dando por cumplir objetivos.
 
 [![mockup2.png](https://i.postimg.cc/YqgGpvM9/mockup2.png)](https://postimg.cc/VdfLgLSQ)
 
@@ -103,21 +102,32 @@ La aplicación EcoWalkers será un producto diseñado para trabajar en entorno m
 
 [![Whats-App-Image-2022-07-05-at-4-09-48-PM.jpg](https://i.postimg.cc/c4dhyBMT/Whats-App-Image-2022-07-05-at-4-09-48-PM.jpg)](https://postimg.cc/xqFMLHZb)
 
-### :dart: Requisitos Funcionales
+### :dart: Requisito Funcional
 ![image](https://user-images.githubusercontent.com/64268942/177435924-3de458d9-9d0f-4347-be59-166abcbcac8f.png)
 
 ### :dart: Diagrama Entidad Relación
 
 ![Modelo Entidad Relacional](https://user-images.githubusercontent.com/49489730/177257605-62166fb8-b1d2-45dd-ae6c-f89dd8aae8ae.PNG)
 
-
 ### Modelo Relacional 
+
 ![Modelo Relacional](https://user-images.githubusercontent.com/49489730/177257613-d84f1bec-a59a-4505-b989-7481a9b5421c.PNG)
 
 ### :dart: Base de Datos
 
 El diseño de los modelos de bases de datos se puede ver en este [Enlace](https://app.moqups.com/Q1vdJRphWudQZaOnlHNssINQ0HhTATt2/view/page/abbaf8365)
 
+
+## :warning: Licencia
+
+Distributed under the no License. See LICENSE.txt for more information.
+
+
+## :handshake: Contacto
+
+Grupo 5 - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+
+Project Link: [EcoWalkers](https://github.com/eluqm/IS-3group5)
 
 
 
