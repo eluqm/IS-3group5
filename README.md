@@ -11,8 +11,19 @@ Ya que esta metodología hace referencia a tarjetas visuales es que utilizaremos
 Creamos 4 listas: To do, In progress, Done y To maintenance
 ![image](https://user-images.githubusercontent.com/64268942/177435854-cbba0220-d0c3-4e8b-a27f-23b2a0ebe75e.png)
 ## Requisitos Funcionales
-![image](https://user-images.githubusercontent.com/64268942/177435924-3de458d9-9d0f-4347-be59-166abcbcac8f.png)
+* RF01 - Registrar Usuarios 
+  - El sistema permite al usuario registrarse. El usuario debe suministrar datos como: Nombre, Apellido, E-mail 
+  - Flujo principal 
+    - El usuario ingresa su Nombre
+    - El usuario ingresa su Apellido.
+    - El usuario ingresa su E-mail.
+    - El Sistema valida el registro
+  - Flujo Alternativo
+    - Si el usuario ingresa incorrectamente sus datos: El sistema mandará un mensaje de error en su respectivo campos
+  - Precondiciones: El usuario no debe de existir en el sistema
+  - Postcondiciones: La cuenta del usuario se registra
 
+*  
 ## Requisitos No Funcionales
 
 
