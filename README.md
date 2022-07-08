@@ -212,5 +212,8 @@ El diseño de los modelos de bases de datos se puede ver en este [Enlace](https:
 ![Modelo Relacional](https://user-images.githubusercontent.com/49489730/177257613-d84f1bec-a59a-4505-b989-7481a9b5421c.PNG)
 
 
+## Diagrama de clases
+![diagrama de clases is3](https://user-images.githubusercontent.com/49292220/178048220-6b0e7369-31ba-4459-b54d-8cc1c480efbc.JPG)
+
 
 
