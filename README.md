@@ -213,7 +213,8 @@ El diseño de los modelos de bases de datos se puede ver en este [Enlace](https:
 
 
 ## Diagrama de clases
-![diagrama de clases is3](https://user-images.githubusercontent.com/49292220/178048220-6b0e7369-31ba-4459-b54d-8cc1c480efbc.JPG)
+Este diagrama de clases se realizo con la ayuda de Moqups [Enlace](https://app.moqups.com/VYfSRKyOH5uF2UYDxh8jDyw4NtpaH07E/view/page/aa458c046)
+![diagrama de clases is3](https://user-images.githubusercontent.com/49292220/178048447-7e706559-fbf7-4eaf-9db3-1fa680b726fa.JPG)
 
 
 
