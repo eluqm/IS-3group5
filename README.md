@@ -124,6 +124,12 @@ La aplicación EcoWalkers será un producto diseñado para trabajar en entorno m
 
 ![Modelo Relacional](https://user-images.githubusercontent.com/49489730/177257613-d84f1bec-a59a-4505-b989-7481a9b5421c.PNG)
 
+### :dart: Arquitectura
+
+MVC (Model-View-Controller) es un patrón de diseño arquitectónico que fomenta una mejor organización de las aplicaciones a través de una separación interna. Divide una aplicación interactiva en tres componentes: Modelo / Vista y Controlador. Refuerza el aislamiento de los datos comerciales (modelos) de las interfaces de usuario (vistas), con un tercer componente (controladores) que tradicionalmente administra la lógica, la entrada del usuario y coordina tanto los modelos como las vistas. El objetivo de MVC es una aplicación en tres partes y por ello en este proyecto se utiliza esta arquitectura, a continuación se muestra la Vista de Proceso:
+
+[![vista-proceso.png](https://i.postimg.cc/Vs46NWDs/vista-proceso.png)](https://postimg.cc/rz0cnWB7)
+
 ### :dart: Base de Datos
 
 El diseño de los modelos de bases de datos se puede ver en este [Enlace](https://app.moqups.com/Q1vdJRphWudQZaOnlHNssINQ0HhTATt2/view/page/abbaf8365)
