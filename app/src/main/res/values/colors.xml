@@ -9,7 +9,6 @@
     <color name="white">#FFFFFFFF</color>
 
 
-
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
@@ -22,4 +21,7 @@
     <color name="avatar_clasico_color">#000000</color>
     <color name="porcentaje_color">#00C107</color>
     <color name="rectangle_18_color">#D2E4FF</color>
+  
+    <color name="gray">#3F3F3F</color>
+    <color name="green">#009418</color>
 </resources>
