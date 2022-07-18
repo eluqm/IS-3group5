@@ -44,16 +44,18 @@
   * [Diagrama de Clases](#dart-diagrama-de-clases)
   * [Arquitectura](#dart-arquitectura)
   * [Base de Datos](#dart-base-de-datos)
+  * [Diagrama de Clase](#dart-diagrama-de-clase)
 - [Licencia](#warning-licencia)
 - [Contacto](#handshake-contacto)
 
 
 ## :star2: Acerca del Proyecto
+=======
+# EcoWalkers: Aplicación móvil enfocada a la reducción del CO2
 
 EcoWalkers es una aplicacion que consiste en brindar información acerca de la cantidad de  CO2 producido por las actividades siguientes: caminar, montar bicicleta, usar algún tipo de transporte de servicio público y el uso de un automóvil personal. Toda la recopilación de los datos mencionados serán presentados al usuario de forma clara y estructurada dentro de la aplicación, por ello los detalles de esta y otras funcionalidades de la aplicación como: itinerario, tabla de posición y tienda de recompensas también son resueltos en este documento. 
 
 ### :space_invader: Tecnologías Usadas
-
 * [Android](https://developer.android.com/)
 * [Java](https://www.java.com/)
 * [Firebase](https://console.firebase.google.com/)
@@ -134,18 +136,19 @@ MVC (Model-View-Controller) es un patrón de diseño arquitectónico que fomenta
 
 El diseño de los modelos de bases de datos se puede ver en este [Enlace](https://app.moqups.com/Q1vdJRphWudQZaOnlHNssINQ0HhTATt2/view/page/abbaf8365)
 
+### :dart: Diagrama de clase
+Este diagrama de clases se realizo con la ayuda de Moqups [Enlace](https://app.moqups.com/VYfSRKyOH5uF2UYDxh8jDyw4NtpaH07E/view/page/aa458c046)
+![diagrama de clases is3](https://user-images.githubusercontent.com/49292220/178048447-7e706559-fbf7-4eaf-9db3-1fa680b726fa.JPG)
 
 ## :warning: Licencia
 
 Distributed under the no License. See LICENSE.txt for more information.
-
 
 ## :handshake: Contacto
 
 Grupo 5 - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
 
 Project Link: [EcoWalkers](https://github.com/eluqm/IS-3group5)
-
 
 
 
