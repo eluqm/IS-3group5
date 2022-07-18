@@ -56,7 +56,7 @@ EcoWalkers es una aplicacion que consiste en brindar información acerca de la c
 
 * [Android](https://developer.android.com/)
 * [Java](https://www.java.com/)
-* [SQLite](https://www.sqlite.org/)
+* [Firebase](https://console.firebase.google.com/)
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### :camera: Mockups
