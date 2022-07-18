@@ -36,13 +36,34 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyD8DwllOsTgPBKKQgbfTGtxkjxVxTPmHvQ" />
 
+<!--        <activity-->
+<!--            android:name=".MapsActivity"-->
+<!--            android:exported="true"-->
+<!--            android:label="@string/title_activity_maps">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
         <activity
             android:name=".MapsActivity"
-            android:exported="true"
-            android:label="@string/title_activity_maps">
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            >
+        </activity>
+
+        <activity android:name="com.example.is3testsproject.tienda_activity" ></activity>
+        <activity android:name="com.example.is3testsproject.item_comprado_opcional_activity"></activity>
+        <activity android:name="com.example.is3testsproject.item_comprado_activity"></activity>
+        <activity android:name="com.example.is3testsproject.mi_actividad_activity"></activity>
+        <activity android:name="com.example.is3testsproject.home_activity"></activity>
+        <activity android:name="com.example.is3testsproject.register_activity"></activity>
+        <activity android:name="com.example.is3testsproject.login_activity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
