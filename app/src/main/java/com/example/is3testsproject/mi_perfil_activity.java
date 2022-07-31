@@ -9,6 +9,6 @@ public class mi_perfil_activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mi_perfil);
+        setContentView(R.layout.mi_actividad);
     }
 }
