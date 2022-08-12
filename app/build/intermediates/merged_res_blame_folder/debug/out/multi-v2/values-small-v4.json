@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.is3testsproject.app-mergeDebugResources-24:/values-small-v4/values-small-v4.xml",
+            "outputFile": "com.example.is3testsproject.app-mergeDebugResources-34:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Poroto\\.gradle\\caches\\transforms-3\\c6ef47ed51301152a6f9bf3761dbd4db\\transformed\\material-1.4.0\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\asus\\.gradle\\caches\\transforms-3\\c6ef47ed51301152a6f9bf3761dbd4db\\transformed\\material-1.4.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

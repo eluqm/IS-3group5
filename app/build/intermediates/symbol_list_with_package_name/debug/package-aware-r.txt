@@ -31,6 +31,10 @@ anim fragment_fast_out_extra_slow_in
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
 anim mtrl_card_lowers_interpolator
+anim nav_default_enter_anim
+anim nav_default_exit_anim
+anim nav_default_pop_enter_anim
+anim nav_default_pop_exit_anim
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -57,8 +61,13 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+animator nav_default_enter_anim
+animator nav_default_exit_anim
+animator nav_default_pop_enter_anim
+animator nav_default_pop_exit_anim
 attr SharedValue
 attr SharedValueId
+attr action
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -111,6 +120,7 @@ attr animationMode
 attr appBarLayoutStyle
 attr applyMotionScene
 attr arcMode
+attr argType
 attr arrowHeadLength
 attr arrowShaftLength
 attr attributeName
@@ -212,6 +222,9 @@ attr carousel_touchUpMode
 attr carousel_touchUp_dampeningFactor
 attr carousel_touchUp_velocityThreshold
 attr chainUseRtl
+attr checkMarkCompat
+attr checkMarkTint
+attr checkMarkTintMode
 attr checkboxStyle
 attr checkedButton
 attr checkedChip
@@ -350,16 +363,20 @@ attr customNavigationLayout
 attr customPixelDimension
 attr customReference
 attr customStringValue
+attr data
+attr dataPattern
 attr dayInvalidStyle
 attr daySelectedStyle
 attr dayStyle
 attr dayTodayStyle
 attr defaultDuration
+attr defaultNavHost
 attr defaultQueryHint
 attr defaultState
 attr deltaPolarAngle
 attr deltaPolarRadius
 attr deriveConstraintsFrom
+attr destination
 attr dialogCornerRadius
 attr dialogPreferredPadding
 attr dialogTheme
@@ -382,6 +399,7 @@ attr drawableTint
 attr drawableTintMode
 attr drawableTopCompat
 attr drawerArrowStyle
+attr drawerLayoutStyle
 attr dropDownListViewStyle
 attr dropdownListPreferredItemHeight
 attr duration
@@ -391,6 +409,7 @@ attr editTextStyle
 attr elevation
 attr elevationOverlayColor
 attr elevationOverlayEnabled
+attr emojiCompatEnabled
 attr enableEdgeToEdge
 attr endIconCheckable
 attr endIconContentDescription
@@ -401,6 +420,7 @@ attr endIconTintMode
 attr enforceMaterialTheme
 attr enforceTextAppearance
 attr ensureMinTouchTargetSize
+attr enterAnim
 attr errorContentDescription
 attr errorEnabled
 attr errorIconDrawable
@@ -408,6 +428,7 @@ attr errorIconTint
 attr errorIconTintMode
 attr errorTextAppearance
 attr errorTextColor
+attr exitAnim
 attr expandActivityOverflowButtonDrawable
 attr expanded
 attr expandedHintEnabled
@@ -472,6 +493,7 @@ attr framePosition
 attr gapBetweenBars
 attr gestureInsetBottomIgnored
 attr goIcon
+attr graph
 attr guidelineUseRtl
 attr haloColor
 attr haloRadius
@@ -549,6 +571,7 @@ attr itemTextColor
 attr keyPositionType
 attr keyboardIcon
 attr keylines
+attr lStar
 attr labelBehavior
 attr labelStyle
 attr labelVisibilityMode
@@ -557,6 +580,7 @@ attr latLngBoundsNorthEastLatitude
 attr latLngBoundsNorthEastLongitude
 attr latLngBoundsSouthWestLatitude
 attr latLngBoundsSouthWestLongitude
+attr launchSingleTop
 attr layout
 attr layoutDescription
 attr layoutDuringTransition
@@ -695,6 +719,7 @@ attr measureWithLargestChild
 attr menu
 attr menuGravity
 attr methodName
+attr mimeType
 attr minHeight
 attr minHideDelay
 attr minSeparation
@@ -736,6 +761,7 @@ attr motion_postLayoutCollision
 attr motion_triggerOnCollision
 attr moveWhenScrollAtTop
 attr multiChoiceItemLayout
+attr navGraph
 attr navigationContentDescription
 attr navigationIcon
 attr navigationIconTint
@@ -743,7 +769,9 @@ attr navigationMode
 attr navigationRailStyle
 attr navigationViewStyle
 attr nestedScrollFlags
+attr nestedScrollViewStyle
 attr nestedScrollable
+attr nullable
 attr number
 attr numericModifiers
 attr onCross
@@ -784,6 +812,10 @@ attr placeholderTextAppearance
 attr placeholderTextColor
 attr placeholder_emptyVisibility
 attr polarRelativeTo
+attr popEnterAnim
+attr popExitAnim
+attr popUpTo
+attr popUpToInclusive
 attr popupMenuBackground
 attr popupMenuStyle
 attr popupTheme
@@ -800,6 +832,7 @@ attr quantizeMotionPhase
 attr quantizeMotionSteps
 attr queryBackground
 attr queryHint
+attr queryPatterns
 attr radioButtonStyle
 attr rangeFillColor
 attr ratingBarStyle
@@ -839,6 +872,7 @@ attr shapeAppearanceLargeComponent
 attr shapeAppearanceMediumComponent
 attr shapeAppearanceOverlay
 attr shapeAppearanceSmallComponent
+attr shortcutMatchRequired
 attr showAnimationBehavior
 attr showAsAction
 attr showDelay
@@ -869,6 +903,7 @@ attr springStopThreshold
 attr srcCompat
 attr stackFromEnd
 attr staggered
+attr startDestination
 attr startIconCheckable
 attr startIconContentDescription
 attr startIconDrawable
@@ -928,6 +963,7 @@ attr tabTextAppearance
 attr tabTextColor
 attr tabUnboundedRipple
 attr targetId
+attr targetPackage
 attr telltales_tailColor
 attr telltales_tailScale
 attr telltales_velocityMode
@@ -1046,6 +1082,7 @@ attr uiTiltGestures
 attr uiZoomControls
 attr uiZoomGestures
 attr upDuration
+attr uri
 attr useCompatPadding
 attr useMaterialThemeColors
 attr useViewLifecycle
@@ -1405,6 +1442,8 @@ dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
 dimen action_bar_size
+dimen activity_horizontal_margin
+dimen activity_vertical_margin
 dimen appcompat_dialog_background_inset
 dimen browser_actions_context_menu_max_width
 dimen browser_actions_context_menu_min_padding
@@ -1419,6 +1458,7 @@ dimen compat_button_padding_vertical_material
 dimen compat_control_corner_material
 dimen compat_notification_large_icon_max_height
 dimen compat_notification_large_icon_max_width
+dimen def_drawer_elevation
 dimen default_dimension
 dimen design_appbar_elevation
 dimen design_bottom_navigation_active_item_max_width
@@ -1879,6 +1919,8 @@ drawable googleg_standard_color_18
 drawable home_ek1
 drawable home_ek3
 drawable ic_clock_black_24dp
+drawable ic_dashboard_black_24dp
+drawable ic_home_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1886,6 +1928,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_notifications_black_24dp
 drawable line_1_shape
 drawable line_4_shape
 drawable line_5_shape
@@ -1937,6 +1980,7 @@ drawable rectangle_1_ek2_shape
 drawable rectangle_1_shape
 drawable rectangle_20
 drawable test_custom_background
+drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable vector
@@ -2034,13 +2078,6 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
-id _bg__home_ek8
-id _bg__item_comprado_ek2
-id _bg__login_ek2
-id _bg__mi_actividad_ek4
-id _bg__mi_perfil_ek2
-id _bg__register_ek2
-id _bg__tienda_ek2
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -2096,7 +2133,6 @@ id action_mode_bar_stub
 id action_mode_close_button
 id action_text
 id actions
-id actividadimagen
 id activity_chooser_view_content
 id add
 id adjust_height
@@ -2105,47 +2141,24 @@ id alertTitle
 id aligned
 id all
 id allStates
-id altura
-id alturalabel
 id always
 id animateToEnd
 id animateToStart
-id ant_design_home_filled
-id ant_design_home_outlined
-id ant_design_home_outlined_ek1
-id ant_design_home_outlined_ek2
-id ant_design_home_outlined_ek3
-id ant_design_play_circle_filled
-id ant_design_play_circle_filled_ek1
-id ant_design_play_circle_filled_ek2
-id ant_design_play_circle_outlined
-id ant_design_play_circle_outlined_ek1
-id ant_design_read_outlined
-id ant_design_read_outlined_ek1
-id ant_design_read_outlined_ek2
-id ant_design_read_outlined_ek3
-id ant_design_read_outlined_ek4
 id antiClockwise
 id anticipate
 id arc
-id arrow_left
-id arrow_left_ek1
-id arrow_left_ek2
 id asConfigured
 id async
 id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
-id avatar_clasico
-id avatarclasico
 id barrier
 id baseline
 id beginOnFirstDraw
 id beginning
 id bestChoice
 id blocking
-id blogs
 id bottom
 id bounce
 id bounceBoth
@@ -2159,21 +2172,13 @@ id browser_actions_menu_view
 id btnSignIn
 id btnSignUp
 id buttonPanel
-id bx_bx_search
-id bytesize_clock
-id bytesize_link
 id cache_measures
 id callMeasure
 id cancel_button
-id cantidadcompras
-id carbon_cross_reference
-id carbon_cross_reference_ek1
-id carbon_cross_reference_ek2
 id carryVelocity
 id center
 id center_horizontal
 id center_vertical
-id cerrarsesion
 id chain
 id chain2
 id chains
@@ -2186,32 +2191,20 @@ id chip3
 id chip_group
 id chronometer
 id circle_center
-id clarity_sign_out_line
 id clear_text
 id clip_horizontal
 id clip_vertical
 id clockwise
 id closest
 id collapseActionView
-id combi
-id con_este_fondo_podras_perzonalizar_tu_app_con_un_increible_tema_crado_por_nuestros_propios_programadores_con_mucho_esfuerzo_y_dedicacion
 id confirm_button
 id constraint
 id container
 id content
 id contentPanel
-id content_container
 id contiguous
 id continuousVelocity
-id contrase_a
-id contrase_a_ek1
-id contrasenhabox
 id coordinator
-id correo
-id correo_ek1
-id correo_ek2
-id correobox
-id correobox_ek1
 id cos
 id counterclockwise
 id currentState
@@ -2226,8 +2219,6 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
-id descripcion
-id descripcionusuario
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -2254,18 +2245,12 @@ id easeIn
 id easeInOut
 id easeOut
 id east
-id edad
-id edad_ek1
-id edadlabel
 id edit_query
 id elastic
-id ellipse_8
 id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
-id esre_es_tu_recorrido_durante_las_ultimas_horas
-id este_grafico_demuestra_las_estadisticas_rescatadas_de_tus_caminatas_los_ultimos_7_dias
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -2278,112 +2263,26 @@ id fitToContents
 id fixed
 id flip
 id floating
-id fondo_para_la_aplicacion
 id forever
-id fotodeperfil
-id fotodeperfil_ek1
+id fragmentContainerView
 id fragment_container_view_tag
-id frame_14
-id frame_2
-id frame_2_ek1
-id frame_3
-id frame_3_ek1
-id frame_4
-id frame_4_ek1
-id frame_4_ek2
-id frame_4_ek3
-id frame_4_ek4
-id frame_4_ek5
-id frame_5
-id frame_5_ek1
-id frame_5_ek2
-id frame_5_ek3
 id frost
-id general
 id ghost_view
 id ghost_view_holder
 id gone
 id graph
 id graph_wrap
-id group
-id group_18
-id group_18_ek1
-id group_20
-id group_20_ek1
-id group_20_ek2
-id group_20_ek3
-id group_21
-id group_21_ek1
-id group_21_ek2
-id group_22
-id group_22_ek1
-id group_22_ek2
-id group_22_ek3
-id group_23
-id group_24
-id group_33
-id group_33_ek1
-id group_33_ek2
-id group_37
-id group_38
-id group_39
-id group_4
-id group_40
-id group_45
-id group_46
-id group_47
-id group_47_ek1
-id group_48
-id group_49
-id group_4_ek1
-id group_58
-id group_59
-id group_61
-id group_63
-id group_70
-id group_78
-id group_82
-id group_83
-id group_83_ek1
-id group_84
-id group_85
-id group_86
-id group_87
-id group_88
-id group_89
 id group_divider
-id group_ek1
-id group_ek2
-id group_ek3
-id group_ek4
-id group_ek5
-id group_ek6
 id grouping
 id groups
 id guideline
 id header_title
-id healthicons_ui_user_profile
-id healthicons_ui_user_profile_outline
-id healthicons_ui_user_profile_outline_ek1
-id healthicons_ui_user_profile_outline_ek2
-id healthicons_ui_user_profile_outline_ek3
 id hideable
-id hola_shober
 id home
 id homeAsUp
-id home_ek1
-id home_ek2
-id home_ek3
-id home_ek4
-id home_ek5
-id home_ek9
 id honorRequest
 id horizontal_only
 id hybrid
-id ic_outline_privacy_tip
-id ic_outline_privacy_tip_ek1
-id ic_outline_privacy_tip_ek2
-id ic_outline_privacy_tip_ek3
 id icon
 id icon_group
 id icon_only
@@ -2391,17 +2290,18 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageButton
 id imageView
 id immediateStop
 id included
 id info
-id infobasica
-id informacion_basica
-id ingresar
 id invisible
 id inward
 id italic
-id item_comprado
+id item1
+id item2
+id item3
+id item4
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
@@ -2413,17 +2313,10 @@ id legacy
 id light
 id line1
 id line3
-id line_1
-id line_4
-id line_5
 id linear
 id listMode
 id list_item
-id login
-id login_ek3
 id map
-id mapa
-id mas
 id masked
 id match_constraint
 id match_parent
@@ -2446,19 +2339,10 @@ id material_timepicker_mode_button
 id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
-id medios_de_transporte_usados
-id mediostransporte
 id message
-id mi_actividad
-id mi_actividad_ek1
-id mi_actividad_ek5
-id mi_actividad_ek6
-id mi_actividad_ek7
-id mi_perfil
-id mi_perfil_ek3
-id mi_perfil_ek4
 id middle
 id mini
+id mobile_navigation
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -2466,7 +2350,6 @@ id month_navigation_next
 id month_navigation_previous
 id month_title
 id motion_base
-id mototaxi
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
 id mtrl_calendar_days_of_week
@@ -2491,23 +2374,24 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
-id my_courses
-id my_profile
-id my_profile_ek1
-id my_profile_ek2
-id my_profile_ek3
+id nav_controller_view_tag
+id nav_host_fragment_activity_main
+id nav_host_fragment_container
+id nav_view
+id navigation_activity
 id navigation_bar_item_icon_view
 id navigation_bar_item_labels_group
 id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
 id navigation_header_container
+id navigation_home
+id navigation_profile
+id navigation_store
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
 id noScroll
 id noState
-id nombres_y_apellidos
-id nombres_y_apellidos_ek1
 id none
 id normal
 id north
@@ -2521,13 +2405,6 @@ id outline
 id outward
 id overshoot
 id packed
-id page_home_ek7
-id page_item_comprado_ek1
-id page_login_ek1
-id page_mi_actividad_ek3
-id page_mi_perfil_ek1
-id page_register_ek1
-id page_tienda_ek1
 id parallax
 id parent
 id parentPanel
@@ -2538,41 +2415,14 @@ id path
 id pathRelative
 id peekHeight
 id percent
-id perfilusuario
-id peso
-id pesolabel
 id pin
-id polygon_1
-id polygon_2
-id porcentaje
-id porcentaje40_
-id porcentaje_ek1
 id position
 id postLayout
 id progress_circular
 id progress_horizontal
-id puntuacion
-id puntuacion_ek1
-id puntuacion_ek2
 id radio
-id ratings_and_reviews
 id ratio
-id recorrido
-id rectangle_1
-id rectangle_18
-id rectangle_18_ek1
-id rectangle_18_ek2
-id rectangle_19
-id rectangle_19_ek1
-id rectangle_1_ek1
-id rectangle_1_ek2
-id rectangle_20
 id rectangles
-id register
-id registrar
-id registrarse
-id registrarse_ek1
-id registre_sus_datos
 id reverseSawtooth
 id right
 id rightToLeft
@@ -2604,9 +2454,6 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
-id sexo
-id sexo_ek1
-id sexolabel
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -2634,13 +2481,6 @@ id src_atop
 id src_in
 id src_over
 id standard
-id star
-id star_ek1
-id star_ek2
-id star_ek3
-id star_ek4
-id star_ek5
-id star_ek6
 id start
 id startHorizontal
 id startToEnd
@@ -2666,7 +2506,6 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
-id taxi
 id terrain
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
@@ -2679,21 +2518,21 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id text_activity
+id text_dashboard
+id text_home
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
+id text_notifications
+id text_profile
+id text_store
 id textinput_counter
 id textinput_error
 id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
-id tienda
-id tienda_ek3
-id tienda_ek4
-id tienda_ek5
-id tienda_ek6
-id tienda_ek7
 id time
 id title
 id titleDividerNoCustom
@@ -2710,99 +2549,16 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id tus_estadisticas_
 id txtAlreadyHaveAccount
 id txtClicktoSingUp
 id txtEmail
 id txtPassword
 id txtUsername
-id ubicacion_actual
 id unchecked
 id uniform
 id unlabeled
 id up
 id useLogo
-id usuarionombre
-id vector
-id vector_ek1
-id vector_ek10
-id vector_ek11
-id vector_ek12
-id vector_ek13
-id vector_ek14
-id vector_ek15
-id vector_ek16
-id vector_ek17
-id vector_ek18
-id vector_ek19
-id vector_ek2
-id vector_ek20
-id vector_ek21
-id vector_ek22
-id vector_ek23
-id vector_ek24
-id vector_ek25
-id vector_ek26
-id vector_ek27
-id vector_ek28
-id vector_ek29
-id vector_ek3
-id vector_ek30
-id vector_ek31
-id vector_ek32
-id vector_ek33
-id vector_ek34
-id vector_ek35
-id vector_ek36
-id vector_ek37
-id vector_ek38
-id vector_ek39
-id vector_ek4
-id vector_ek40
-id vector_ek41
-id vector_ek42
-id vector_ek43
-id vector_ek44
-id vector_ek45
-id vector_ek46
-id vector_ek47
-id vector_ek48
-id vector_ek49
-id vector_ek5
-id vector_ek50
-id vector_ek51
-id vector_ek52
-id vector_ek53
-id vector_ek54
-id vector_ek55
-id vector_ek56
-id vector_ek57
-id vector_ek58
-id vector_ek59
-id vector_ek6
-id vector_ek60
-id vector_ek61
-id vector_ek62
-id vector_ek63
-id vector_ek64
-id vector_ek65
-id vector_ek66
-id vector_ek67
-id vector_ek68
-id vector_ek69
-id vector_ek7
-id vector_ek70
-id vector_ek71
-id vector_ek72
-id vector_ek73
-id vector_ek74
-id vector_ek75
-id vector_ek76
-id vector_ek77
-id vector_ek78
-id vector_ek79
-id vector_ek8
-id vector_ek9
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -2811,8 +2567,6 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
-id wallpaper
-id walpaper_premium
 id west
 id wide
 id withText
@@ -2828,6 +2582,7 @@ integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
 integer bottom_sheet_slide_duration
 integer cancel_button_image_alpha
+integer config_navAnimTime
 integer config_tooltipAnimTime
 integer design_snackbar_text_max_lines
 integer design_tab_indicator_anim_duration_ms
@@ -2891,7 +2646,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_maps
+layout activity_main
 layout activity_sign_in
 layout activity_sign_up
 layout browser_actions_context_menu_page
@@ -2912,9 +2667,13 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout home
-layout item_comprado
-layout login
+layout fragment_activity
+layout fragment_dashboard
+layout fragment_home
+layout fragment_maps
+layout fragment_notifications
+layout fragment_profile
+layout fragment_store
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -2929,8 +2688,6 @@ layout material_time_input
 layout material_timepicker
 layout material_timepicker_dialog
 layout material_timepicker_textinput_display
-layout mi_actividad
-layout mi_perfil
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2966,7 +2723,6 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
-layout register
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -2986,9 +2742,12 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
-layout tienda
+menu bottom_nav_menu
+menu example_menu
+menu example_menu2
 mipmap ic_launcher
 mipmap ic_launcher_round
+navigation mobile_navigation
 plurals mtrl_badge_content_description
 raw keep
 string abc_action_bar_home_description
@@ -3020,6 +2779,7 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string altura_string
 string alturalabel_string
+string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
 string avatar_clasico_string
@@ -3165,6 +2925,8 @@ string my_profile_ek1_string
 string my_profile_ek2_string
 string my_profile_ek3_string
 string my_profile_string
+string nav_app_bar_navigate_up_description
+string nav_app_bar_open_drawer_description
 string nombres_y_apellidos_ek1_string
 string nombres_y_apellidos_string
 string password_toggle_content_description
@@ -3197,7 +2959,11 @@ string tienda_ek4_string
 string tienda_ek5_string
 string tienda_ek6_string
 string tienda_ek7_string
+string title_activity
 string title_activity_maps
+string title_home
+string title_profile
+string title_store
 string tus_estadisticas__string
 string ubicacion_actual_string
 string usuarionombre_string
@@ -3930,6 +3696,7 @@ styleable ActionMenuItemView android_minWidth
 styleable ActionMenuView
 styleable ActionMode background backgroundSplit closeItemLayout height subtitleTextStyle titleTextStyle
 styleable ActivityChooserView expandActivityOverflowButtonDrawable initialActivityCount
+styleable ActivityNavigator android_name action data dataPattern targetPackage
 styleable AlertDialog android_layout buttonIconDimen buttonPanelSideLayout listItemLayout listLayout multiChoiceItemLayout showTitle singleChoiceItemLayout
 styleable AnimatedStateListDrawableCompat android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration
 styleable AnimatedStateListDrawableItem android_id android_drawable
@@ -3937,10 +3704,11 @@ styleable AnimatedStateListDrawableTransition android_drawable android_toId andr
 styleable AppBarLayout android_background android_touchscreenBlocksFocus android_keyboardNavigationCluster elevation expanded liftOnScroll liftOnScrollTargetViewId statusBarForeground
 styleable AppBarLayoutStates state_collapsed state_collapsible state_liftable state_lifted
 styleable AppBarLayout_Layout layout_scrollFlags layout_scrollInterpolator
+styleable AppCompatEmojiHelper
 styleable AppCompatImageView android_src srcCompat tint tintMode
 styleable AppCompatSeekBar android_thumb tickMark tickMarkTint tickMarkTintMode
 styleable AppCompatTextHelper android_textAppearance android_drawableTop android_drawableBottom android_drawableLeft android_drawableRight android_drawableStart android_drawableEnd
-styleable AppCompatTextView android_textAppearance autoSizeMaxTextSize autoSizeMinTextSize autoSizePresetSizes autoSizeStepGranularity autoSizeTextType drawableBottomCompat drawableEndCompat drawableLeftCompat drawableRightCompat drawableStartCompat drawableTint drawableTintMode drawableTopCompat firstBaselineToTopHeight fontFamily fontVariationSettings lastBaselineToBottomHeight lineHeight textAllCaps textLocale
+styleable AppCompatTextView android_textAppearance autoSizeMaxTextSize autoSizeMinTextSize autoSizePresetSizes autoSizeStepGranularity autoSizeTextType drawableBottomCompat drawableEndCompat drawableLeftCompat drawableRightCompat drawableStartCompat drawableTint drawableTintMode drawableTopCompat firstBaselineToTopHeight fontFamily fontVariationSettings lastBaselineToBottomHeight lineHeight textAllCaps textLocale emojiCompatEnabled
 styleable AppCompatTheme android_windowIsFloating android_windowAnimationStyle actionBarDivider actionBarItemBackground actionBarPopupTheme actionBarSize actionBarSplitStyle actionBarStyle actionBarTabBarStyle actionBarTabStyle actionBarTabTextStyle actionBarTheme actionBarWidgetTheme actionButtonStyle actionDropDownStyle actionMenuTextAppearance actionMenuTextColor actionModeBackground actionModeCloseButtonStyle actionModeCloseContentDescription actionModeCloseDrawable actionModeCopyDrawable actionModeCutDrawable actionModeFindDrawable actionModePasteDrawable actionModePopupWindowStyle actionModeSelectAllDrawable actionModeShareDrawable actionModeSplitBackground actionModeStyle actionModeTheme actionModeWebSearchDrawable actionOverflowButtonStyle actionOverflowMenuStyle activityChooserViewStyle alertDialogButtonGroupStyle alertDialogCenterButtons alertDialogStyle alertDialogTheme autoCompleteTextViewStyle borderlessButtonStyle buttonBarButtonStyle buttonBarNegativeButtonStyle buttonBarNeutralButtonStyle buttonBarPositiveButtonStyle buttonBarStyle buttonStyle buttonStyleSmall checkboxStyle checkedTextViewStyle colorAccent colorBackgroundFloating colorButtonNormal colorControlActivated colorControlHighlight colorControlNormal colorError colorPrimary colorPrimaryDark colorSwitchThumbNormal controlBackground dialogCornerRadius dialogPreferredPadding dialogTheme dividerHorizontal dividerVertical dropDownListViewStyle dropdownListPreferredItemHeight editTextBackground editTextColor editTextStyle homeAsUpIndicator imageButtonStyle listChoiceBackgroundIndicator listChoiceIndicatorMultipleAnimated listChoiceIndicatorSingleAnimated listDividerAlertDialog listMenuViewStyle listPopupWindowStyle listPreferredItemHeight listPreferredItemHeightLarge listPreferredItemHeightSmall listPreferredItemPaddingEnd listPreferredItemPaddingLeft listPreferredItemPaddingRight listPreferredItemPaddingStart panelBackground panelMenuListTheme panelMenuListWidth popupMenuStyle popupWindowStyle radioButtonStyle ratingBarStyle ratingBarStyleIndicator ratingBarStyleSmall searchViewStyle seekBarStyle selectableItemBackground selectableItemBackgroundBorderless spinnerDropDownItemStyle spinnerStyle switchStyle textAppearanceLargePopupMenu textAppearanceListItem textAppearanceListItemSecondary textAppearanceListItemSmall textAppearancePopupMenuHeader textAppearanceSearchResultSubtitle textAppearanceSearchResultTitle textAppearanceSmallPopupMenu textColorAlertDialogListItem textColorSearchUrl toolbarNavigationButtonStyle toolbarStyle tooltipForegroundColor tooltipFrameBackground viewInflaterClass windowActionBar windowActionBarOverlay windowActionModeOverlay windowFixedHeightMajor windowFixedHeightMinor windowFixedWidthMajor windowFixedWidthMinor windowMinWidthMajor windowMinWidthMinor windowNoTitle
 styleable Badge backgroundColor badgeGravity badgeTextColor horizontalOffset maxCharacterCount number verticalOffset
 styleable BaseProgressIndicator android_indeterminate hideAnimationBehavior indicatorColor minHideDelay showAnimationBehavior showDelay trackColor trackCornerRadius trackThickness
@@ -3948,8 +3716,10 @@ styleable BottomAppBar backgroundTint elevation fabAlignmentMode fabAnimationMod
 styleable BottomNavigationView itemHorizontalTranslationEnabled
 styleable BottomSheetBehavior_Layout android_maxWidth android_elevation backgroundTint behavior_draggable behavior_expandedOffset behavior_fitToContents behavior_halfExpandedRatio behavior_hideable behavior_peekHeight behavior_saveFlags behavior_skipCollapsed gestureInsetBottomIgnored paddingBottomSystemWindowInsets paddingLeftSystemWindowInsets paddingRightSystemWindowInsets paddingTopSystemWindowInsets shapeAppearance shapeAppearanceOverlay
 styleable ButtonBarLayout allowStacking
+styleable Capability queryPatterns shortcutMatchRequired
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Carousel carousel_backwardTransition carousel_emptyViewsBehavior carousel_firstView carousel_forwardTransition carousel_infinite carousel_nextState carousel_previousState carousel_touchUpMode carousel_touchUp_dampeningFactor carousel_touchUp_velocityThreshold
+styleable CheckedTextView android_checkMark checkMarkCompat checkMarkTint checkMarkTintMode
 styleable Chip android_textAppearance android_textSize android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
 styleable CircularProgressIndicator indicatorDirectionCircular indicatorInset indicatorSize
@@ -3957,7 +3727,7 @@ styleable ClockFaceView clockFaceBackgroundColor clockNumberTextColor
 styleable ClockHandView clockHandColor materialCircleRadius selectorSize
 styleable CollapsingToolbarLayout collapsedTitleGravity collapsedTitleTextAppearance contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance extraMultilineHeightEnabled forceApplySystemWindowInsetTop maxLines scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleCollapseMode titleEnabled toolbarId
 styleable CollapsingToolbarLayout_Layout layout_collapseMode layout_collapseParallaxMultiplier
-styleable ColorStateListItem android_color android_alpha alpha
+styleable ColorStateListItem android_color android_alpha android_lStar alpha lStar
 styleable CompoundButton android_button buttonCompat buttonTint buttonTintMode
 styleable Constraint android_orientation android_id android_visibility android_layout_width android_layout_height android_layout_marginLeft android_layout_marginTop android_layout_marginRight android_layout_marginBottom android_maxWidth android_maxHeight android_minWidth android_minHeight android_alpha android_transformPivotX android_transformPivotY android_translationX android_translationY android_scaleX android_scaleY android_rotation android_rotationX android_rotationY android_layout_marginStart android_layout_marginEnd android_translationZ android_elevation animateCircleAngleTo animateRelativeTo barrierAllowsGoneWidgets barrierDirection barrierMargin chainUseRtl constraint_referenced_ids constraint_referenced_tags drawPath flow_firstHorizontalBias flow_firstHorizontalStyle flow_firstVerticalBias flow_firstVerticalStyle flow_horizontalAlign flow_horizontalBias flow_horizontalGap flow_horizontalStyle flow_lastHorizontalBias flow_lastHorizontalStyle flow_lastVerticalBias flow_lastVerticalStyle flow_maxElementsWrap flow_verticalAlign flow_verticalBias flow_verticalGap flow_verticalStyle flow_wrapMode guidelineUseRtl layout_constrainedHeight layout_constrainedWidth layout_constraintBaseline_creator layout_constraintBaseline_toBaselineOf layout_constraintBaseline_toBottomOf layout_constraintBaseline_toTopOf layout_constraintBottom_creator layout_constraintBottom_toBottomOf layout_constraintBottom_toTopOf layout_constraintCircle layout_constraintCircleAngle layout_constraintCircleRadius layout_constraintDimensionRatio layout_constraintEnd_toEndOf layout_constraintEnd_toStartOf layout_constraintGuide_begin layout_constraintGuide_end layout_constraintGuide_percent layout_constraintHeight layout_constraintHeight_default layout_constraintHeight_max layout_constraintHeight_min layout_constraintHeight_percent layout_constraintHorizontal_bias layout_constraintHorizontal_chainStyle layout_constraintHorizontal_weight layout_constraintLeft_creator layout_constraintLeft_toLeftOf layout_constraintLeft_toRightOf layout_constraintRight_creator layout_constraintRight_toLeftOf layout_constraintRight_toRightOf layout_constraintStart_toEndOf layout_constraintStart_toStartOf layout_constraintTag layout_constraintTop_creator layout_constraintTop_toBottomOf layout_constraintTop_toTopOf layout_constraintVertical_bias layout_constraintVertical_chainStyle layout_constraintVertical_weight layout_constraintWidth layout_constraintWidth_default layout_constraintWidth_max layout_constraintWidth_min layout_constraintWidth_percent layout_editor_absoluteX layout_editor_absoluteY layout_goneMarginBaseline layout_goneMarginBottom layout_goneMarginEnd layout_goneMarginLeft layout_goneMarginRight layout_goneMarginStart layout_goneMarginTop layout_marginBaseline layout_wrapBehaviorInParent motionProgress motionStagger pathMotionArc pivotAnchor polarRelativeTo quantizeMotionInterpolator quantizeMotionPhase quantizeMotionSteps transformPivotTarget transitionEasing transitionPathRotate visibilityMode
 styleable ConstraintLayout_Layout android_orientation android_padding android_paddingLeft android_paddingTop android_paddingRight android_paddingBottom android_visibility android_layout_width android_layout_height android_layout_margin android_layout_marginLeft android_layout_marginTop android_layout_marginRight android_layout_marginBottom android_maxWidth android_maxHeight android_minWidth android_minHeight android_paddingStart android_paddingEnd android_layout_marginStart android_layout_marginEnd android_elevation android_layout_marginHorizontal android_layout_marginVertical barrierAllowsGoneWidgets barrierDirection barrierMargin chainUseRtl circularflow_angles circularflow_defaultAngle circularflow_defaultRadius circularflow_radiusInDP circularflow_viewCenter constraintSet constraint_referenced_ids constraint_referenced_tags flow_firstHorizontalBias flow_firstHorizontalStyle flow_firstVerticalBias flow_firstVerticalStyle flow_horizontalAlign flow_horizontalBias flow_horizontalGap flow_horizontalStyle flow_lastHorizontalBias flow_lastHorizontalStyle flow_lastVerticalBias flow_lastVerticalStyle flow_maxElementsWrap flow_verticalAlign flow_verticalBias flow_verticalGap flow_verticalStyle flow_wrapMode guidelineUseRtl layoutDescription layout_constrainedHeight layout_constrainedWidth layout_constraintBaseline_creator layout_constraintBaseline_toBaselineOf layout_constraintBaseline_toBottomOf layout_constraintBaseline_toTopOf layout_constraintBottom_creator layout_constraintBottom_toBottomOf layout_constraintBottom_toTopOf layout_constraintCircle layout_constraintCircleAngle layout_constraintCircleRadius layout_constraintDimensionRatio layout_constraintEnd_toEndOf layout_constraintEnd_toStartOf layout_constraintGuide_begin layout_constraintGuide_end layout_constraintGuide_percent layout_constraintHeight layout_constraintHeight_default layout_constraintHeight_max layout_constraintHeight_min layout_constraintHeight_percent layout_constraintHorizontal_bias layout_constraintHorizontal_chainStyle layout_constraintHorizontal_weight layout_constraintLeft_creator layout_constraintLeft_toLeftOf layout_constraintLeft_toRightOf layout_constraintRight_creator layout_constraintRight_toLeftOf layout_constraintRight_toRightOf layout_constraintStart_toEndOf layout_constraintStart_toStartOf layout_constraintTag layout_constraintTop_creator layout_constraintTop_toBottomOf layout_constraintTop_toTopOf layout_constraintVertical_bias layout_constraintVertical_chainStyle layout_constraintVertical_weight layout_constraintWidth layout_constraintWidth_default layout_constraintWidth_max layout_constraintWidth_min layout_constraintWidth_percent layout_editor_absoluteX layout_editor_absoluteY layout_goneMarginBaseline layout_goneMarginBottom layout_goneMarginEnd layout_goneMarginLeft layout_goneMarginRight layout_goneMarginStart layout_goneMarginTop layout_marginBaseline layout_optimizationLevel layout_wrapBehaviorInParent
@@ -3968,7 +3738,9 @@ styleable ConstraintSet android_orientation android_id android_visibility androi
 styleable CoordinatorLayout keylines statusBarBackground
 styleable CoordinatorLayout_Layout android_layout_gravity layout_anchor layout_anchorGravity layout_behavior layout_dodgeInsetEdges layout_insetEdge layout_keyline
 styleable CustomAttribute attributeName customBoolean customColorDrawableValue customColorValue customDimension customFloatValue customIntegerValue customPixelDimension customReference customStringValue methodName
+styleable DialogFragmentNavigator android_name
 styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness
+styleable DrawerLayout elevation
 styleable ExtendedFloatingActionButton collapsedSize elevation extendMotionSpec hideMotionSpec showMotionSpec shrinkMotionSpec
 styleable ExtendedFloatingActionButton_Behavior_Layout behavior_autoHide behavior_autoShrink
 styleable FloatingActionButton android_enabled backgroundTint backgroundTintMode borderWidth elevation ensureMinTouchTargetSize fabCustomSize fabSize hideMotionSpec hoveredFocusedTranslationZ maxImageSize pressedTranslationZ rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec useCompatPadding
@@ -3979,6 +3751,7 @@ styleable FontFamilyFont android_font android_fontWeight android_fontStyle andro
 styleable ForegroundLinearLayout android_foreground android_foregroundGravity foregroundInsidePadding
 styleable Fragment android_name android_id android_tag
 styleable FragmentContainerView android_name android_tag
+styleable FragmentNavigator android_name
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
 styleable ImageFilterView altSrc blendSrc brightness contrast crossfade imagePanX imagePanY imageRotate imageZoom overlay round roundPercent saturation warmth
@@ -4024,9 +3797,17 @@ styleable MotionLabel android_textSize android_typeface android_textStyle androi
 styleable MotionLayout applyMotionScene currentState layoutDescription motionDebug motionProgress showPaths
 styleable MotionScene defaultDuration layoutDuringTransition
 styleable MotionTelltales telltales_tailColor telltales_tailScale telltales_velocityMode
+styleable NavAction android_id destination enterAnim exitAnim launchSingleTop popEnterAnim popExitAnim popUpTo popUpToInclusive
+styleable NavArgument android_name android_defaultValue argType nullable
+styleable NavDeepLink android_autoVerify action mimeType uri
+styleable NavGraphNavigator startDestination
+styleable NavHost navGraph
+styleable NavHostFragment defaultNavHost
+styleable NavInclude graph
 styleable NavigationBarView backgroundTint elevation itemBackground itemIconSize itemIconTint itemRippleColor itemTextAppearanceActive itemTextAppearanceInactive itemTextColor labelVisibilityMode menu
 styleable NavigationRailView headerLayout menuGravity
 styleable NavigationView android_background android_fitsSystemWindows android_maxWidth elevation headerLayout itemBackground itemHorizontalPadding itemIconPadding itemIconSize itemIconTint itemMaxLines itemShapeAppearance itemShapeAppearanceOverlay itemShapeFillColor itemShapeInsetBottom itemShapeInsetEnd itemShapeInsetStart itemShapeInsetTop itemTextAppearance itemTextColor menu shapeAppearance shapeAppearanceOverlay
+styleable Navigator android_label android_id
 styleable OnClick clickAction targetId
 styleable OnSwipe autoCompleteMode dragDirection dragScale dragThreshold limitBoundsTo maxAcceleration maxVelocity moveWhenScrollAtTop nestedScrollFlags onTouchUp rotationCenterId springBoundary springDamping springMass springStiffness springStopThreshold touchAnchorId touchAnchorSide touchRegionId
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor

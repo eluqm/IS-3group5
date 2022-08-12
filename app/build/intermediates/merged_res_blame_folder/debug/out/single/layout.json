@@ -1,42 +1,46 @@
 [
     {
-        "merged": "com.example.is3testsproject.app-mergeDebugResources-25:/layout/activity_maps.xml",
-        "source": "com.example.is3testsproject.app-main-28:/layout/activity_maps.xml"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.example.is3testsproject.app-mergeDebugResources-35:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.example.is3testsproject.app-main-38:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "com.example.is3testsproject.app-mergeDebugResources-25:/layout/register.xml",
-        "source": "com.example.is3testsproject.app-main-28:/layout/register.xml"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.example.is3testsproject.app-mergeDebugResources-35:\\layout\\activity_sign_in.xml",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.example.is3testsproject.app-main-38:\\layout\\activity_sign_in.xml"
     },
     {
-        "merged": "com.example.is3testsproject.app-mergeDebugResources-25:/layout/item_comprado.xml",
-        "source": "com.example.is3testsproject.app-main-28:/layout/item_comprado.xml"
+        "merged": "com.example.is3testsproject.app-mergeDebugResources-35:/layout/fragment_activity.xml",
+        "source": "com.example.is3testsproject.app-main-38:/layout/fragment_activity.xml"
     },
     {
-        "merged": "com.example.is3testsproject.app-mergeDebugResources-25:/layout/login.xml",
-        "source": "com.example.is3testsproject.app-main-28:/layout/login.xml"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.example.is3testsproject.app-mergeDebugResources-35:\\layout\\fragment_dashboard.xml",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.example.is3testsproject.app-main-38:\\layout\\fragment_dashboard.xml"
     },
     {
-        "merged": "com.example.is3testsproject.app-mergeDebugResources-25:/layout/mi_perfil.xml",
-        "source": "com.example.is3testsproject.app-main-28:/layout/mi_perfil.xml"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.example.is3testsproject.app-mergeDebugResources-35:\\layout\\fragment_maps.xml",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.example.is3testsproject.app-main-38:\\layout\\fragment_maps.xml"
     },
     {
-        "merged": "com.example.is3testsproject.app-mergeDebugResources-25:/layout/activity_sign_in.xml",
-        "source": "com.example.is3testsproject.app-main-28:/layout/activity_sign_in.xml"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.example.is3testsproject.app-mergeDebugResources-35:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.example.is3testsproject.app-main-38:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.is3testsproject.app-mergeDebugResources-25:/layout/tienda.xml",
-        "source": "com.example.is3testsproject.app-main-28:/layout/tienda.xml"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.example.is3testsproject.app-mergeDebugResources-35:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.example.is3testsproject.app-main-38:\\layout\\fragment_profile.xml"
     },
     {
-        "merged": "com.example.is3testsproject.app-mergeDebugResources-25:/layout/activity_sign_up.xml",
-        "source": "com.example.is3testsproject.app-main-28:/layout/activity_sign_up.xml"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.example.is3testsproject.app-mergeDebugResources-35:\\layout\\fragment_notifications.xml",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.example.is3testsproject.app-main-38:\\layout\\fragment_notifications.xml"
     },
     {
-        "merged": "com.example.is3testsproject.app-mergeDebugResources-25:/layout/home.xml",
-        "source": "com.example.is3testsproject.app-main-28:/layout/home.xml"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.example.is3testsproject.app-mergeDebugResources-35:\\layout\\fragment_store.xml",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.example.is3testsproject.app-main-38:\\layout\\fragment_store.xml"
     },
     {
-        "merged": "com.example.is3testsproject.app-mergeDebugResources-25:/layout/mi_actividad.xml",
-        "source": "com.example.is3testsproject.app-main-28:/layout/mi_actividad.xml"
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.example.is3testsproject.app-mergeDebugResources-35:\\layout\\fragment_activity.xml",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.example.is3testsproject.app-main-38:\\layout\\fragment_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.example.is3testsproject.app-mergeDebugResources-35:\\layout\\activity_sign_up.xml",
+        "source": "C:\\Users\\asus\\.gradle\\daemon\\7.3.3\\com.example.is3testsproject.app-main-38:\\layout\\activity_sign_up.xml"
     }
 ]

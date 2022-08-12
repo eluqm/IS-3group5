@@ -77,4 +77,10 @@
     <string name="registrarse_ek1_string">Registrarse</string>
     <string name="correo_ek2_string">Correo</string>
     <string name="contrase_a_ek1_string">Contrasea</string>
+
+
+    <string name="title_home">Home</string>
+    <string name="title_activity">Activity</string>
+    <string name="title_store">Store</string>
+    <string name="title_profile">Profile</string>
 </resources>
