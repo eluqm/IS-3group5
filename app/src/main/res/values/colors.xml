@@ -7,21 +7,4 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
-
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
-
-    <color name="_bg__mi_perfil_ek2_color">#FFFFFF</color>
-    <color name="home_color">#3E3E3E</color>
-    <color name="mi_perfil_ek3_color">#009317</color>
-    <color name="line_4_color">#BDB4B4</color>
-    <color name="edadlabel_color">#BDB3B3</color>
-    <color name="avatar_clasico_color">#000000</color>
-    <color name="porcentaje_color">#00C107</color>
-    <color name="rectangle_18_color">#D2E4FF</color>
-  
-    <color name="gray">#3F3F3F</color>
-    <color name="green">#009418</color>
 </resources>
