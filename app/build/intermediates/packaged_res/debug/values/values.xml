@@ -20,6 +20,8 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
     <string name="altura_string">170.00</string>
     <string name="alturalabel_string">Altura</string>
     <string name="app_name">IS3 Tests Project</string>
@@ -99,7 +101,11 @@
     <string name="tienda_ek5_string">Tienda</string>
     <string name="tienda_ek6_string">Tienda</string>
     <string name="tienda_ek7_string">Tienda</string>
+    <string name="title_activity">Activity</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_store">Store</string>
     <string name="tus_estadisticas__string">Tus estadisticas:</string>
     <string name="ubicacion_actual_string">Ubicacion actual</string>
     <string name="usuarionombre_string">Shober Mendoza</string>
