@@ -9,7 +9,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60ef69a7-492f-4bb1-a165-b9d30515865b" name="Changes" comment="Se agrego PerfilActivity" />
+    <list default="true" id="60ef69a7-492f-4bb1-a165-b9d30515865b" name="Changes" comment="Se agrego Perfil">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660337762316</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Se agrego Perfil">
+      <created>1660338006729</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660338006729</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,6 +160,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se agrego PerfilActivity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se agrego PerfilActivity" />
+    <MESSAGE value="Se agrego Perfil" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se agrego Perfil" />
   </component>
 </project>
