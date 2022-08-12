@@ -4,7 +4,7 @@
             "outputFile": "com.example.is3testsproject.app-mergeDebugResources-34:/values-v28/values-v28.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\asus\\.gradle\\caches\\transforms-3\\c6ef47ed51301152a6f9bf3761dbd4db\\transformed\\material-1.4.0\\res\\values-v28\\values-v28.xml",
+                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\c6ef47ed51301152a6f9bf3761dbd4db\\transformed\\material-1.4.0\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\asus\\.gradle\\caches\\transforms-3\\3fce9fe9426df80f70c0571bc4d6bfb5\\transformed\\appcompat-1.4.2\\res\\values-v28\\values-v28.xml",
+                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\3fce9fe9426df80f70c0571bc4d6bfb5\\transformed\\appcompat-1.4.2\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,8",
                         "startColumns": "4,4,4,4",
