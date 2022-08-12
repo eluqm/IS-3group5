@@ -4,7 +4,7 @@
             "outputFile": "com.example.is3testsproject.app-mergeDebugResources-34:/values-v22/values-v22.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\asus\\.gradle\\caches\\transforms-3\\3fce9fe9426df80f70c0571bc4d6bfb5\\transformed\\appcompat-1.4.2\\res\\values-v22\\values-v22.xml",
+                    "source": "C:\\Users\\VLADI\\.gradle\\caches\\transforms-3\\3fce9fe9426df80f70c0571bc4d6bfb5\\transformed\\appcompat-1.4.2\\res\\values-v22\\values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",

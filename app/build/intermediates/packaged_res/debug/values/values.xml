@@ -52,6 +52,7 @@
     <string name="google_app_id" translatable="false">1:1049956813688:android:1eb80f79bba4f870ec568d</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAQM8eLpcpbp66gZP-IKicjJFeFgoEmI5o</string>
     <string name="google_storage_bucket" translatable="false">ecowalkers-75227.appspot.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hola_shober_string">Hola Shober</string>
     <string name="home_ek2_string">Home</string>
     <string name="home_ek4_string">Home</string>

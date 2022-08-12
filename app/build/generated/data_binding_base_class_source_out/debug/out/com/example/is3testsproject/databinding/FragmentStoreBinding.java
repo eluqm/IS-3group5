@@ -4,6 +4,7 @@ package com.example.is3testsproject.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,11 +21,24 @@ public final class FragmentStoreBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView textStore;
+  public final ImageView imageView5;
 
-  private FragmentStoreBinding(@NonNull ConstraintLayout rootView, @NonNull TextView textStore) {
+  @NonNull
+  public final ImageView imageView6;
+
+  @NonNull
+  public final TextView textView13;
+
+  @NonNull
+  public final TextView textView14;
+
+  private FragmentStoreBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView imageView5,
+      @NonNull ImageView imageView6, @NonNull TextView textView13, @NonNull TextView textView14) {
     this.rootView = rootView;
-    this.textStore = textStore;
+    this.imageView5 = imageView5;
+    this.imageView6 = imageView6;
+    this.textView13 = textView13;
+    this.textView14 = textView14;
   }
 
   @Override
@@ -54,13 +68,32 @@ public final class FragmentStoreBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.text_store;
-      TextView textStore = ViewBindings.findChildViewById(rootView, id);
-      if (textStore == null) {
+      id = R.id.imageView5;
+      ImageView imageView5 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView5 == null) {
         break missingId;
       }
 
-      return new FragmentStoreBinding((ConstraintLayout) rootView, textStore);
+      id = R.id.imageView6;
+      ImageView imageView6 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView6 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView13;
+      TextView textView13 = ViewBindings.findChildViewById(rootView, id);
+      if (textView13 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView14;
+      TextView textView14 = ViewBindings.findChildViewById(rootView, id);
+      if (textView14 == null) {
+        break missingId;
+      }
+
+      return new FragmentStoreBinding((ConstraintLayout) rootView, imageView5, imageView6,
+          textView13, textView14);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
