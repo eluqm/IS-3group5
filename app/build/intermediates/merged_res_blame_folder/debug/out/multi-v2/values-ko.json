@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.is3testsproject.app-mergeDebugResources-34:/values-ko/values-ko.xml",
+            "outputFile": "com.example.is3testsproject.app-mergeDebugResources-35:/values-ko/values-ko.xml",
             "map": [
                 {
                     "source": "C:\\Users\\asus\\.gradle\\caches\\transforms-3\\ee959a6f3e104c88b0e02242671f826b\\transformed\\navigation-ui-2.3.5\\res\\values-ko\\values-ko.xml",

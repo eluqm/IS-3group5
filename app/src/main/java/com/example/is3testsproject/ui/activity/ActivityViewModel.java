@@ -1,8 +1,13 @@
 package com.example.is3testsproject.ui.activity;
 
+import android.graphics.Color;
+
+import android.os.Bundle;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
+
+
 
 public class ActivityViewModel extends ViewModel {
 
@@ -11,7 +16,9 @@ public class ActivityViewModel extends ViewModel {
     public ActivityViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is activity fragment");
+
     }
+
 
     public LiveData<String> getText() {
         return mText;

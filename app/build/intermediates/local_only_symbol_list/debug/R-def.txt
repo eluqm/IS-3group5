@@ -145,6 +145,7 @@ id btnSignIn
 id btnSignUp
 id container
 id fragmentContainerView
+id idBarChart
 id imageButton
 id imageView
 id map

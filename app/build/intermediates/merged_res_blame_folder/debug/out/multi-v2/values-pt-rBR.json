@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.is3testsproject.app-mergeDebugResources-34:/values-pt-rBR/values-pt-rBR.xml",
+            "outputFile": "com.example.is3testsproject.app-mergeDebugResources-35:/values-pt-rBR/values-pt-rBR.xml",
             "map": [
                 {
                     "source": "C:\\Users\\asus\\.gradle\\caches\\transforms-3\\af30a4e3ab7b2e2545dad0d30b7fca53\\transformed\\browser-1.4.0\\res\\values-pt-rBR\\values-pt-rBR.xml",

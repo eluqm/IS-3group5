@@ -8,10 +8,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.is3testsproject.R;
+import com.github.mikephil.charting.charts.BarChart;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -21,15 +21,15 @@ public final class FragmentActivityBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final FragmentContainerView fragmentContainerView;
+  public final BarChart idBarChart;
 
   @NonNull
   public final TextView textActivity;
 
-  private FragmentActivityBinding(@NonNull ConstraintLayout rootView,
-      @NonNull FragmentContainerView fragmentContainerView, @NonNull TextView textActivity) {
+  private FragmentActivityBinding(@NonNull ConstraintLayout rootView, @NonNull BarChart idBarChart,
+      @NonNull TextView textActivity) {
     this.rootView = rootView;
-    this.fragmentContainerView = fragmentContainerView;
+    this.idBarChart = idBarChart;
     this.textActivity = textActivity;
   }
 
@@ -60,9 +60,9 @@ public final class FragmentActivityBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.fragmentContainerView;
-      FragmentContainerView fragmentContainerView = ViewBindings.findChildViewById(rootView, id);
-      if (fragmentContainerView == null) {
+      id = R.id.idBarChart;
+      BarChart idBarChart = ViewBindings.findChildViewById(rootView, id);
+      if (idBarChart == null) {
         break missingId;
       }
 
@@ -72,8 +72,7 @@ public final class FragmentActivityBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentActivityBinding((ConstraintLayout) rootView, fragmentContainerView,
-          textActivity);
+      return new FragmentActivityBinding((ConstraintLayout) rootView, idBarChart, textActivity);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

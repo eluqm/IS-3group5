@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.is3testsproject.app-mergeDebugResources-34:/values-lt/values-lt.xml",
+            "outputFile": "com.example.is3testsproject.app-mergeDebugResources-35:/values-lt/values-lt.xml",
             "map": [
                 {
                     "source": "C:\\Users\\asus\\.gradle\\caches\\transforms-3\\3fce9fe9426df80f70c0571bc4d6bfb5\\transformed\\appcompat-1.4.2\\res\\values-lt\\values-lt.xml",
