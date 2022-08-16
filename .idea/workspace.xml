@@ -5,21 +5,20 @@
       <config />
     </shared>
   </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="TAG" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
-  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60ef69a7-492f-4bb1-a165-b9d30515865b" name="Changes" comment="" />
+    <list default="true" id="60ef69a7-492f-4bb1-a165-b9d30515865b" name="Changes" comment="Se agrego Perfil">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[MRWWXKYXSWJ7SWZH]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\Dell\.android\avd\Nexus_6_API_23.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -27,14 +26,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
   </component>
   <component name="ProjectId" id="2C8egSyon0Aa43dmbPm8LceZFHI" />
   <component name="ProjectViewState">
@@ -49,13 +40,13 @@
     <property name="android-custom-viewC:/Users/asus/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.3.4/7d1a4c5b4083d27dd3ec8cbc2cfff6187995e642/fragment-1.3.4-sources.jar!/androidx/fragment/app/FragmentContainerView.java_FragmentContainerView_DIMENSIONS" value="1080&#10;1920" />
     <property name="android-custom-viewC:/Users/asus/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.3.4/7d1a4c5b4083d27dd3ec8cbc2cfff6187995e642/fragment-1.3.4-sources.jar!/androidx/fragment/app/FragmentContainerView.java_SELECTED" value="FragmentContainerView" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FitDemo" />
-    <property name="project.structure.last.edited" value="Dependencies" />
-    <property name="project.structure.proportion" value="0.17" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/com/example/is3testsproject" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
+    <key name="android.template.-697410125">
+      <recent name="com.example.is3testsproject" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\asus\Documents\GitHub\IS-3group5\app\src\main\java\com\example\is3testsproject" />
       <recent name="C:\Users\asus\Documents\GitHub\IS-3group5\app\src\main\res\values" />
@@ -138,6 +129,21 @@
       <option name="presentableId" value="Default" />
       <updated>1658188750536</updated>
     </task>
+    <task id="LOCAL-00001" summary="Se agrego PerfilActivity">
+      <created>1660337762316</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660337762316</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Se agrego Perfil">
+      <created>1660338006729</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660338006729</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -151,5 +157,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Se agrego PerfilActivity" />
+    <MESSAGE value="Se agrego Perfil" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se agrego Perfil" />
   </component>
 </project>
