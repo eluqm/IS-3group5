@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/VLADI/StudioProjects/IS-3group5/app/src/main/res/layout/activity_main.xml" value="0.19021739130434784" />
+        <entry key="..\:/Users/VLADI/StudioProjects/IS-3group5/app/src/main/res/layout/fragment_activity.xml" value="0.19021739130434784" />
+        <entry key="..\:/Users/VLADI/StudioProjects/IS-3group5/app/src/main/res/layout/fragment_dashboard.xml" value="0.19021739130434784" />
+        <entry key="..\:/Users/VLADI/StudioProjects/IS-3group5/app/src/main/res/layout/fragment_maps.xml" value="0.19021739130434784" />
+        <entry key="..\:/Users/VLADI/StudioProjects/IS-3group5/app/src/main/res/layout/fragment_store.xml" value="0.22" />
+        <entry key="..\:/Users/VLADI/StudioProjects/IS-3group5/app/src/main/res/layout/fragment_store_item.xml" value="0.33" />
         <entry key="..\:/UNSA/IS-3group5/app/src/main/res/layout/activity_main.xml" value="0.12635869565217392" />
         <entry key="..\:/UNSA/IS-3group5/app/src/main/res/layout/fragment_home.xml" value="0.18854166666666666" />
         <entry key="..\:/UNSA/IS-3group5/app/src/main/res/layout/fragment_profile.xml" value="0.2859399684044234" />

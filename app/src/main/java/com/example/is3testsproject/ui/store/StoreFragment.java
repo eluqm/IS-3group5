@@ -24,7 +24,8 @@ public class StoreFragment extends Fragment {
         binding = FragmentStoreBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textStore;
+        final TextView textView = binding.textView14;
+
         dashboardViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }

@@ -29,6 +29,6 @@
                     android:textAlignment="center"
                     android:textSize="20sp" />
 
-        </LinearLayout>
+        </LinearLayout
 
 </androidx.constraintlayout.widget.ConstraintLayout>
