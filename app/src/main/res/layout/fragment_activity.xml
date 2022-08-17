@@ -29,6 +29,12 @@
                     android:textAlignment="center"
                     android:textSize="20sp" />
 
-        </LinearLayout
+                <androidx.fragment.app.FragmentContainerView
+                    android:id="@+id/ResultsSensor"
+                    android:name="com.example.is3testsproject.SensorFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+        </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

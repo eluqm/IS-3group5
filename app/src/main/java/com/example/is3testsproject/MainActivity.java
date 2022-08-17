@@ -16,9 +16,11 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -44,6 +46,7 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationView;
 
 import java.text.DateFormat;
 import java.util.Calendar;
@@ -66,9 +69,9 @@ public class MainActivity extends AppCompatActivity  {
 
     private ActivityMainBinding binding;
     //Google fitness
+
     public static final String TAG = "MainActivity";
     private String[] REQUIRED_PERMISSIONS;
-
     FragmentManager fragmentManager;
     SensorFragment sensorFragment;
     ActivityResultLauncher<String[]> rpl;
@@ -102,34 +105,63 @@ public class MainActivity extends AppCompatActivity  {
             REQUIRED_PERMISSIONS = new String[]{ Manifest.permission.ACTIVITY_RECOGNITION};
             Log.v(TAG, "below android 12 activity recognition needed.");
         }
-//        rpl = registerForActivityResult(new ActivityResultContracts.RequestMultiplePermissions(),
-//                new ActivityResultCallback<Map<String, Boolean>>() {
-//                    @Override
-//                    public void onActivityResult(Map<String, Boolean> isGranted) {
-//                        boolean granted = true;
-//                        for (Map.Entry<String, Boolean> x : isGranted.entrySet()) {
-//                            Log.v(TAG, x.getKey() + " is " + x.getValue());
-//                            if (!x.getValue()) granted = false;
-//                        }
-//                        if (granted) {
-//                            Log.v(TAG, "All permissions are granted.");
-//                            //they likely died first without permissions, so just do it again.
-//                            sensorFragment = new SensorFragment();
-////                            recordFragment = new RecordFragment();
-//                            fragmentManager.beginTransaction().replace(R.id.container, sensorFragment).commit();
-//                            Toast.makeText(getApplicationContext(), "Activity access granted", Toast.LENGTH_SHORT).show();
-//                        } else {
-//                            Log.v(TAG, "One of more permissions were NOT granted.");
-//                            Toast.makeText(getApplicationContext(), "Activity access NOT granted", Toast.LENGTH_SHORT).show();
-//                            finish();
-//
-//                        }
-//                    }
-//                }
-//        );
+        rpl = registerForActivityResult(new ActivityResultContracts.RequestMultiplePermissions(),
+                new ActivityResultCallback<Map<String, Boolean>>() {
+                    @Override
+                    public void onActivityResult(Map<String, Boolean> isGranted) {
+                        boolean granted = true;
+                        for (Map.Entry<String, Boolean> x : isGranted.entrySet()) {
+                            Log.v(TAG, x.getKey() + " is " + x.getValue());
+                            if (!x.getValue()) granted = false;
+                        }
+                        if (granted) {
+                            Log.v(TAG, "All permissions are granted.");
+                            //they likely died first without permissions, so just do it again.
+                            sensorFragment = new SensorFragment();
+//                            recordFragment = new RecordFragment();
+                            fragmentManager.beginTransaction().replace( R.id.ResultsSensor, sensorFragment).commit();
+                            Toast.makeText(getApplicationContext(), "Activity access granted", Toast.LENGTH_SHORT).show();
+                        } else {
+                            Log.v(TAG, "One of more permissions were NOT granted.");
+                            Toast.makeText(getApplicationContext(), "Activity access NOT granted", Toast.LENGTH_SHORT).show();
+                            finish();
 
+                        }
+                    }
+                }
+        );
+        fragmentManager = getSupportFragmentManager();
 
+        //first instance, so the default is zero.
+        if (allPermissionsGranted()) {
+            sensorFragment = new SensorFragment();
+//            fragmentManager.beginTransaction().replace(R.id.ResultsSensor, sensorFragment).commit();
+        }  //else wait until it comes back.
 
     }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (!allPermissionsGranted())
+            rpl.launch(REQUIRED_PERMISSIONS);
+        else
+            Log.v(TAG, "All permissions have been granted already.");
+    }
+    private boolean allPermissionsGranted() {
+        for (String permission : REQUIRED_PERMISSIONS) {
+            if (ContextCompat.checkSelfPermission(this, permission) != PackageManager.PERMISSION_GRANTED) {
+                return false;
+            }
+        }
+        return true;
+    }
 
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == SensorFragment.REQUEST_OAUTH) {
+            sensorFragment.onActivityResult(requestCode, resultCode, data);
+            return;
+        }
+        super.onActivityResult(requestCode, resultCode, data);
+    }
 }

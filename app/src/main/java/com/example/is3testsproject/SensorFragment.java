@@ -72,8 +72,8 @@ public class SensorFragment extends Fragment {
                 return true;
             }
         });
-        View myView = inflater.inflate(R.layout.fragment_activity, container, false);
-        logger = myView.findViewById(R.id.text_activity);
+        View myView = inflater.inflate(R.layout.fragment_dashboard, container, false);
+        logger = myView.findViewById(R.id.text_dashboard);
 
         return myView;
     }
@@ -125,14 +125,6 @@ public class SensorFragment extends Fragment {
         GoogleSignIn.getClient(requireContext(), signInOptions)
             .signOut();
 
-        //instead we could just revoke access, but signout should clear everything.
-//            .revokeAccess()
-//                .addOnSuccessListener(new OnSuccessListener<Void>() {
-//                    @Override
-//                    public void onSuccess(Void aVoid) {
-//                        Log.d(TAG, "disconnected from google fit.");
-//                    }
-//                });
 
     }
 
