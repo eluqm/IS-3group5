@@ -28,6 +28,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.is3testsproject.databinding.ActivityMainBinding;
+import com.example.is3testsproject.ui.maps.MapsFragment;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.fitness.Fitness;
@@ -65,7 +66,7 @@ import java.util.concurrent.TimeUnit;
 import static java.text.DateFormat.getDateInstance;
 import static java.text.DateFormat.getTimeInstance;
 
-public class MainActivity extends AppCompatActivity  {
+public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
     //Google fitness
@@ -164,4 +165,5 @@ public class MainActivity extends AppCompatActivity  {
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
+
 }
