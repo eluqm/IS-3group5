@@ -76,11 +76,12 @@ Luego tenemos dos mockups especialmente diseñados para la tienda interna de la 
 ### :wave: Equipo
 
 * [Joselyn](https://github.com/Joselyn7)
-* [Yober](https://github.com/YoberM)
 * [Gabriela](https://www.sqlite.org/)
+* [Fabian](https://www.sqlite.org/)
+* [Yober](https://github.com/YoberM)
 * [Jean](https://github.com/JpChavez16)
 * [Edwar](https://github.com/evargashe)
-* [Fabian](https://www.sqlite.org/)
+
 
 ### :compass: Gestión del Proyecto
 
