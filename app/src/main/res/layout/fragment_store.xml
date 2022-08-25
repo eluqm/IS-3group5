@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quantum_yellow400"
+    tools:context=".ui.store.StoreFragment">
+
+    <LinearLayout
+        android:layout_width="178dp"
+        android:layout_height="213dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.102">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/avatarclasico" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="204dp"
+        android:layout_height="192dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="74dp">
+
+        <LinearLayout
+            android:layout_width="201dp"
+            android:layout_height="174dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:textColor="#4CAF50"
+                android:text="@string/avatar_clasico_string" />
+
+            <LinearLayout
+                android:layout_width="143dp"
+                android:layout_height="119dp"
+                android:layout_weight="0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="69dp"
+                    android:layout_height="wrap_content"
+                    android:text="3" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="123dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@android:drawable/btn_star_big_on" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
