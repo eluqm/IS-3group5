@@ -107,7 +107,7 @@ La aplicación EcoWalkers será un producto diseñado para trabajar en entorno m
 
 [![Whats-App-Image-2022-07-05-at-4-09-48-PM.jpg](https://i.postimg.cc/c4dhyBMT/Whats-App-Image-2022-07-05-at-4-09-48-PM.jpg)](https://postimg.cc/xqFMLHZb)
 
-### :dart: Requisito Funcional
+### :dart: Requisitos Funcionales
 
 ![image](https://user-images.githubusercontent.com/64268942/179634923-87412b8d-d7bd-4fae-995b-cc9f62d74401.png)
 
