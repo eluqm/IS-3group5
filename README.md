@@ -105,7 +105,13 @@ La aplicación EcoWalkers será un producto diseñado para trabajar en entorno m
 
 ### :dart: Requisitos Funcionales
 
-![image](https://user-images.githubusercontent.com/64268942/179634923-87412b8d-d7bd-4fae-995b-cc9f62d74401.png)
+- Registrar Usuarios
+- Iniciar de Sesión
+- Iniciar Actividad
+- Consultar Actividad
+- Consultar Información personal
+- Modificar Información personal 
+- 
 
 ### :dart: Requisitos No Funcionales
 
