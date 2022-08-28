@@ -70,7 +70,7 @@ Tambien tenemos un mockup para la parte de las estadisticas de nuestras activida
 [![mockup.png](https://i.postimg.cc/MTKKVGCy/mockup.png)](https://postimg.cc/jWmbrRd5)
 
 
-[![mockup2.png](https://i.postimg.cc/YqgGpvM9/mockup2.png)](https://postimg.cc/VdfLgLSQ)
+
 
 ### :wave: Equipo
 
