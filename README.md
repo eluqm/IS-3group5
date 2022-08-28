@@ -48,7 +48,6 @@
 - [Licencia](#warning-licencia)
 - [Contacto](#handshake-contacto)
 
-
 ## :star2: Acerca del Proyecto
 =======
 # EcoWalkers: Aplicación móvil enfocada a la reducción del CO2
