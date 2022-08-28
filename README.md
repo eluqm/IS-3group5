@@ -69,7 +69,6 @@ Tambien tenemos un mockup para la parte de las estadisticas de nuestras activida
 
 [![mockup.png](https://i.postimg.cc/MTKKVGCy/mockup.png)](https://postimg.cc/jWmbrRd5)
 
-Luego tenemos dos mockups especialmente diseñados para la tienda interna de la app donde se ofreceran varioa avaatares y walpapers para usar en la app lo cuales se van a canjear con puntos que se iran dando por cumplir objetivos.
 
 [![mockup2.png](https://i.postimg.cc/YqgGpvM9/mockup2.png)](https://postimg.cc/VdfLgLSQ)
 
