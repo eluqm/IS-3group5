@@ -69,9 +69,6 @@ Tambien tenemos un mockup para la parte de las estadisticas de nuestras activida
 
 [![mockup.png](https://i.postimg.cc/MTKKVGCy/mockup.png)](https://postimg.cc/jWmbrRd5)
 
-
-
-
 ### :wave: Equipo
 
 * [Joselyn](https://github.com/Joselyn7)
