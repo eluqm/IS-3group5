@@ -72,7 +72,7 @@ Tambien tenemos un mockup para la parte de las estadisticas de nuestras activida
 ### :wave: Equipo
 
 * [Joselyn](https://github.com/Joselyn7)
-* [Gabriela](https://www.sqlite.org/)
+* [Gabriela](https://github.com/gchipanap)
 * [Fabian](https://www.sqlite.org/)
 * [Yober](https://github.com/YoberM)
 * [Jean](https://github.com/JpChavez16)
@@ -111,7 +111,6 @@ La aplicación EcoWalkers será un producto diseñado para trabajar en entorno m
 - Consultar Actividad
 - Consultar Información personal
 - Modificar Información personal 
-- 
 
 ### :dart: Requisitos No Funcionales
 
