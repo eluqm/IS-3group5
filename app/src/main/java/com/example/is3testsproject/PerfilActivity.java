@@ -78,7 +78,7 @@ public class PerfilActivity extends AppCompatActivity {
                         Users users = snapshot.getValue(Users.class);
                         Picasso.get()
                                 .load(users.getProfilePic())
-                                .placeholder(R.drawable.avatar)
+                                .placeholder(R.drawable.avatarclasico)
                                 .into(binding.profileImage);
 
                     }

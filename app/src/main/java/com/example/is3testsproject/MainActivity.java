@@ -106,43 +106,10 @@ public class MainActivity extends AppCompatActivity {
             REQUIRED_PERMISSIONS = new String[]{ Manifest.permission.ACTIVITY_RECOGNITION};
             Log.v(TAG, "below android 12 activity recognition needed.");
         }
-        rpl = registerForActivityResult(new ActivityResultContracts.RequestMultiplePermissions(),
-                new ActivityResultCallback<Map<String, Boolean>>() {
-                    @Override
-                    public void onActivityResult(Map<String, Boolean> isGranted) {
-                        boolean granted = true;
-                        for (Map.Entry<String, Boolean> x : isGranted.entrySet()) {
-                            Log.v(TAG, x.getKey() + " is " + x.getValue());
-                            if (!x.getValue()) granted = false;
-                        }
-                        if (granted) {
-                            Log.v(TAG, "All permissions are granted.");
-                            //they likely died first without permissions, so just do it again.
-                            sensorFragment = new SensorFragment();
-//                            recordFragment = new RecordFragment();
-                            fragmentManager.beginTransaction().replace( R.id.ResultsSensor, sensorFragment).commit();
-                            Toast.makeText(getApplicationContext(), "Activity access granted", Toast.LENGTH_SHORT).show();
-                        } else {
-                            Log.v(TAG, "One of more permissions were NOT granted.");
-                            Toast.makeText(getApplicationContext(), "Activity access NOT granted", Toast.LENGTH_SHORT).show();
-                            finish();
-
-                        }
-                    }
-                }
-        );
-        fragmentManager = getSupportFragmentManager();
-
-        //first instance, so the default is zero.
-        if (allPermissionsGranted()) {
-            sensorFragment = new SensorFragment();
-//            fragmentManager.beginTransaction().replace(R.id.ResultsSensor, sensorFragment).commit();
-        }  //else wait until it comes back.
-
     }
     @Override
     protected void onResume() {
-        super.onResume();
+        super.onResume();   
         if (!allPermissionsGranted())
             rpl.launch(REQUIRED_PERMISSIONS);
         else

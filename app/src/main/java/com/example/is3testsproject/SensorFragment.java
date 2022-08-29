@@ -106,10 +106,10 @@ public class SensorFragment extends Fragment {
     private void requestOAuthPermission() {
         FitnessOptions fitnessOptions = getFitnessSignInOptions();
         GoogleSignIn.requestPermissions(
-            this,
-            REQUEST_OAUTH,
-            GoogleSignIn.getLastSignedInAccount(requireContext()),
-            fitnessOptions);
+                this,
+                REQUEST_OAUTH,
+                GoogleSignIn.getLastSignedInAccount(requireContext()),
+                fitnessOptions);
 
     }
 
@@ -123,7 +123,7 @@ public class SensorFragment extends Fragment {
 
         //GoogleSignInClient client = GoogleSignIn.getClient(getContext(), signInOptions);
         GoogleSignIn.getClient(requireContext(), signInOptions)
-            .signOut();
+                .signOut();
 
 
     }
@@ -166,36 +166,36 @@ public class SensorFragment extends Fragment {
 
         // Note: Fitness.SensorsApi.findDataSources() requires the ACCESS_FINE_LOCATION permission.
         Fitness.getSensorsClient(requireActivity(), GoogleSignIn.getLastSignedInAccount(requireContext()))
-            .findDataSources(
-                new DataSourcesRequest.Builder()
-                    //.setDataTypes(DataType.TYPE_STEP_COUNT_DELTA)
-                    .setDataTypes(DataType.TYPE_STEP_COUNT_CUMULATIVE)
-                    .setDataSourceTypes(DataSource.TYPE_RAW)
-                    .build())
-            .addOnSuccessListener(
-                new OnSuccessListener<List<DataSource>>() {
-                    @Override
-                    public void onSuccess(List<DataSource> dataSources) {
-                        for (DataSource dataSource : dataSources) {
-                            Log.wtf(TAG, "Data source found: " + dataSource.toString());
-                            Log.wtf(TAG, "Data Source type: " + dataSource.getDataType().getName());
+                .findDataSources(
+                        new DataSourcesRequest.Builder()
+                                //.setDataTypes(DataType.TYPE_STEP_COUNT_DELTA)
+                                .setDataTypes(DataType.TYPE_STEP_COUNT_CUMULATIVE)
+                                .setDataSourceTypes(DataSource.TYPE_RAW)
+                                .build())
+                .addOnSuccessListener(
+                        new OnSuccessListener<List<DataSource>>() {
+                            @Override
+                            public void onSuccess(List<DataSource> dataSources) {
+                                for (DataSource dataSource : dataSources) {
+                                    Log.wtf(TAG, "Data source found: " + dataSource.toString());
+                                    Log.wtf(TAG, "Data Source type: " + dataSource.getDataType().getName());
 
-                            // Let's register a listener to receive Activity data!
-                            if (dataSource.getDataType().equals(DataType.TYPE_STEP_COUNT_CUMULATIVE)
-                                && mlistener == null) {
-                                Log.i(TAG, "Data source for Step Count (cumulative) found!  Registering.");
-                                setupSensors(dataSource, DataType.TYPE_STEP_COUNT_CUMULATIVE);
+                                    // Let's register a listener to receive Activity data!
+                                    if (dataSource.getDataType().equals(DataType.TYPE_STEP_COUNT_CUMULATIVE)
+                                            && mlistener == null) {
+                                        Log.i(TAG, "Data source for Step Count (cumulative) found!  Registering.");
+                                        setupSensors(dataSource, DataType.TYPE_STEP_COUNT_CUMULATIVE);
+                                    }
+                                }
                             }
-                        }
-                    }
-                })
-            .addOnFailureListener(
-                new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Log.e(TAG, "failed", e);
-                    }
-                });
+                        })
+                .addOnFailureListener(
+                        new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                Log.e(TAG, "failed", e);
+                            }
+                        });
     }
 
 
@@ -216,24 +216,24 @@ public class SensorFragment extends Fragment {
         };
 
         Fitness.getSensorsClient(requireActivity(), GoogleSignIn.getLastSignedInAccount(requireContext()))
-            .add(
-                new SensorRequest.Builder()
-                    .setDataSource(dataSource) // Optional but recommended for custom data sets.
-                    .setDataType(dataType) // Can't be omitted.
-                    .setSamplingRate(10, TimeUnit.SECONDS)
-                    .build(),
-                mlistener)
-            .addOnCompleteListener(
-                new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        if (task.isSuccessful()) {
-                            Log.i(TAG, "Listener registered!");
-                        } else {
-                            Log.e(TAG, "Listener not registered.", task.getException());
-                        }
-                    }
-                });
+                .add(
+                        new SensorRequest.Builder()
+                                .setDataSource(dataSource) // Optional but recommended for custom data sets.
+                                .setDataType(dataType) // Can't be omitted.
+                                .setSamplingRate(10, TimeUnit.SECONDS)
+                                .build(),
+                        mlistener)
+                .addOnCompleteListener(
+                        new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                if (task.isSuccessful()) {
+                                    Log.i(TAG, "Listener registered!");
+                                } else {
+                                    Log.e(TAG, "Listener not registered.", task.getException());
+                                }
+                            }
+                        });
 
     }
 
@@ -250,18 +250,18 @@ public class SensorFragment extends Fragment {
         // even if called from within onStop, but a callback can still be added in order to
         // inspect the results.
         Fitness.getSensorsClient(requireActivity(), GoogleSignIn.getLastSignedInAccount(requireContext()))
-            .remove(mlistener)
-            .addOnCompleteListener(
-                new OnCompleteListener<Boolean>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Boolean> task) {
-                        if (task.isSuccessful() && task.getResult()) {
-                            Log.i(TAG, "Listener was removed!");
-                        } else {
-                            Log.i(TAG, "Listener was not removed.");
-                        }
-                    }
-                });
+                .remove(mlistener)
+                .addOnCompleteListener(
+                        new OnCompleteListener<Boolean>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Boolean> task) {
+                                if (task.isSuccessful() && task.getResult()) {
+                                    Log.i(TAG, "Listener was removed!");
+                                } else {
+                                    Log.i(TAG, "Listener was not removed.");
+                                }
+                            }
+                        });
         // [END unregister_data_listener]
     }
 
