@@ -67,10 +67,7 @@ public class SignInActivity extends AppCompatActivity {
 
         });
 
-        if(mAuth.getCurrentUser() != null){
-            Intent intent = new Intent(SignInActivity.this, MainActivity.class);
-            startActivity(intent);
-        }
+        //code por si cierra la app
 
         binding.txtClicktoSingUp.setOnClickListener(new View.OnClickListener() {
             @Override
